@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className="antialiased h-full">
         <header className="w-full bg-emerald-950 p-2 text-center absolute top-0">
           <Link href="/" className="font-bold text-2xl">
-            GOA2
+            GoA2 Your Happy Place
           </Link>
         </header>
         <div className="p-8 h-full flex flex-col justify-center">

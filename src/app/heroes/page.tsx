@@ -4,10 +4,10 @@ import { HEROES } from "@/data/heroes";
 
 export default function Heroes() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex gap-4 flex-wrap justify-center">
       {HEROES.map((hero, i) => (
         <Button
-          className="flex flex-col gap-1"
+          className="flex flex-col gap-1 items-center w-50"
           key={i}
           to={`/heroes/${hero.name}`}
         >

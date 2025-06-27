@@ -39,7 +39,7 @@ export default async function HeroPage({
   return (
     <>
       <Button to={`/heroes`}>{"< Back"}</Button>
-      <div className="flex flex-col gap-8 items-center">
+      <div className="flex flex-col gap-8 items-center pt-6">
         <div className="flex flex-col gap-1 items-center">
           <div className="text-2xl font-bold">{name}</div>
           <Complexity complexity={complexity} />
@@ -99,7 +99,7 @@ function StatRow({ base, potential }: { base: number; potential: number }) {
             index < base
               ? "#3aab47"
               : index < potential
-              ? "#89f48d"
+              ? "#a9f49d"
               : "transparent"
           }
           stroke="#076913"

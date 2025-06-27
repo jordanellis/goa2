@@ -13,14 +13,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en">
       <body className="antialiased h-full">
         <header className="w-full bg-emerald-950 p-2 text-center absolute top-0">
           <Link href="/" className="font-bold text-2xl">
             GoA2 Your Happy Place
           </Link>
         </header>
-        <div className="p-8 h-full flex flex-col justify-center">
+        <div className="sm:p-8 h-full flex flex-col justify-center sm:pt-20 p-4 pt-16">
           {children}
         </div>
       </body>

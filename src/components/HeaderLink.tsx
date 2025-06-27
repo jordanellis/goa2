@@ -13,7 +13,7 @@ export default function HeaderLink({
   const pathname = usePathname();
 
   return (
-    <Link href={to} className={`font-bold text-xs uppercase ${pathname}`}>
+    <Link href={to} className="font-bold text-xs uppercase">
       <div>{title}</div>
       <div
         className={`w-10 h-0.5 mx-auto mt-0.5 bg-linear-to-b from-slate-400 to-slate-100 ${

@@ -1,7 +1,8 @@
 import Button from "@/components/Button";
 import Complexity from "@/components/Complexity";
+import { GAMES } from "@/data/games";
 import { HEROES } from "@/data/heroes";
-import { Role } from "@/types/hero";
+import { HeroName, Role } from "@/types/hero";
 import {
   Accessibility,
   Bandage,
@@ -12,7 +13,6 @@ import {
   HeartPlus,
   RectangleHorizontal,
   Rss,
-  Star,
   Sword,
   Tractor,
 } from "lucide-react";
@@ -35,6 +35,8 @@ export default async function HeroPage({
   const { name, complexity, stats, roles, link } = hero;
 
   const statBlock = "flex justify-between w-72 items-center";
+
+  const { wins, games } = getHeroWinrate(name);
 
   return (
     <>
@@ -82,6 +84,9 @@ export default async function HeroPage({
           {roles.map((r) => (
             <RoleIcon role={r} key={r} />
           ))}
+        </div>
+        <div>
+          Win rate: {games ? `${(100 * (wins / games)).toFixed(2)}%` : "--"}
         </div>
         <Link
           className="underline text-emerald-400 hover:text-emerald-500"
@@ -135,4 +140,21 @@ function RoleIcon({ role }: { role: Role }) {
       <div className="uppercase font-bold">{role}</div>
     </div>
   );
+}
+
+function getHeroWinrate(name: HeroName) {
+  let wins = 0;
+  let games = 0;
+
+  for (let i = 0; i < GAMES.length; i++) {
+    const player = GAMES[i].players.find(({ heroName }) => name === heroName);
+
+    if (!player) continue;
+
+    games++;
+
+    if (player.win) wins++;
+  }
+
+  return { wins, games };
 }

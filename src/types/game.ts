@@ -1,14 +1,21 @@
 import { HeroName } from "./hero"
+import { PlayerName } from "./players";
 
 export enum WinType {
-  TIMER = "timer",
-  THRONE = "throne",
-  LIFE = "life"
+  TIMER = "Last Push",
+  THRONE = "Claimed Throne",
+  LIFE = "Heroes Eliminated"
+}
+
+export type GamePlayer = {
+  name: PlayerName;
+  heroName: HeroName;
+  win: boolean;
 }
 
 export type Game = {
-  date: Date,
-  winningTeam: HeroName[],
-  losingTeam: HeroName[],
+  id: number
+  date: string,
+  players: GamePlayer[],
   winType: WinType
 }

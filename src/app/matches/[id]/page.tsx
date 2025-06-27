@@ -13,18 +13,36 @@ export default async function MatchPage({
   return (
     <>
       <Button className="w-fit" to="/matches">
-        {"< Back"}
+        {"< Matches"}
       </Button>
-      <div className="flex flex-col gap-4 m-auto pt-6">
-        <div>{match?.date}</div>
-        <div>
-          {match?.players.map((p) => (
-            <div key={p.heroName}>
-              {p.heroName} ({p.name}) {p.win ? "✅" : "🔻"}
-            </div>
-          ))}
+      <div className="flex flex-col gap-4 m-auto pt-6 text-neutral-100 text-center">
+        <div className="">{match?.date}</div>
+        <div className="flex flex-col gap-4">
+          <div className="text-blue-300 font-bold">
+            {match?.players
+              .filter((p) => p.win)
+              .map((p) => (
+                <div key={p.heroName}>
+                  <Link href={`/heroes/${p.heroName}`}>{p.heroName}</Link> (
+                  {p.name})
+                </div>
+              ))}
+          </div>
+          <div>Defeated</div>
+          <div className="text-rose-300 font-bold">
+            {match?.players
+              .filter((p) => !p.win)
+              .map((p) => (
+                <div key={p.heroName}>
+                  <Link href={`/heroes/${p.heroName}`}>{p.heroName}</Link> (
+                  <Link href={`/players/${p.name}`}>{p.name}</Link>)
+                </div>
+              ))}
+          </div>
         </div>
-        <div>{match?.winType}</div>
+        <div className="italic">
+          Won by <span className="lowercase">{match?.winType}</span>
+        </div>
       </div>
     </>
   );

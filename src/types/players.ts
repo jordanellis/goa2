@@ -1,8 +1,8 @@
 export enum PlayerName {
-	JORDAN = "JORDAN",
-	NICK = "NICK",
-	DUSTIN = "DUSTIN",
-	CHRIS = "CHRIS",
+	JORDAN = "Jordan",
+	NICK = "Nick",
+	DUSTIN = "Dustin",
+	CHRIS = "Chris",
 }
 
 export type Player = {

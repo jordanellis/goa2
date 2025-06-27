@@ -38,7 +38,7 @@ export default async function HeroPage({
 
   return (
     <>
-      <Button to={`/heroes`}>{"< Back"}</Button>
+      <Button to={`/heroes`}>{"< Heroes"}</Button>
       <div className="flex flex-col gap-8 items-center pt-6">
         <div className="flex flex-col gap-1 items-center">
           <div className="text-2xl font-bold">{name}</div>
@@ -83,7 +83,12 @@ export default async function HeroPage({
             <RoleIcon role={r} key={r} />
           ))}
         </div>
-        <Link href={link}>Guide</Link>
+        <Link
+          className="underline text-emerald-400 hover:text-emerald-500"
+          href={link}
+        >
+          Guide
+        </Link>
       </div>
     </>
   );

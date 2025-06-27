@@ -3,7 +3,7 @@ import { PlayerName } from "./players";
 
 export enum WinType {
   TIMER = "Last Push",
-  THRONE = "Claimed Throne",
+  THRONE = "Claiming Throne",
   LIFE = "Heroes Eliminated"
 }
 

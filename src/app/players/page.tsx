@@ -1,15 +1,9 @@
-import Button from "@/components/Button";
-import { GAMES } from "@/data/games";
 import { PLAYERS } from "@/data/players";
-import { GamePlayer } from "@/types/game";
 import Link from "next/link";
 
 export default function Players() {
   return (
     <>
-      <Button className="w-fit" to="/">
-        {"< Home"}
-      </Button>
       <div className="flex flex-col m-auto max-w-sm w-full pt-6">
         {PLAYERS.map(({ name }) => (
           <Link

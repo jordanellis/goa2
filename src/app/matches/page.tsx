@@ -1,13 +1,9 @@
-import Button from "@/components/Button";
 import { GAMES } from "@/data/games";
 import Link from "next/link";
 
 export default function Matches() {
   return (
     <>
-      <Button className="w-fit" to="/">
-        {"< Home"}
-      </Button>
       <div className="flex flex-col m-auto max-w-sm w-full pt-6">
         {GAMES.sort((a, b) => b.id - a.id).map(
           ({ id, date, winType, players }) => (

@@ -17,9 +17,6 @@ export default function Heroes() {
 
   return (
     <>
-      <Button className="w-fit" to="/">
-        {"< Home"}
-      </Button>
       <div className="flex flex-col gap-8 pt-6">
         <div className="w-fit mx-auto flex">
           {Array.from({ length: 4 }, (_, i) => (

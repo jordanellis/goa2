@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+import HeaderLink from "@/components/HeaderLink";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,14 +16,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased h-full">
-        <header className="w-full bg-emerald-950 p-2 text-center absolute top-0">
+        <header className="w-full bg-linear-to-t from-emerald-950 to-emerald-800 p-2 text-center absolute top-0 text-rose-100">
           <Link href="/" className="font-bold text-2xl">
             GoA2 Your Happy Place
           </Link>
+          <div className="flex justify-around pt-3">
+            <HeaderLink to={"/heroes"} title="heroes" />
+            <HeaderLink to={"/matches"} title="matches" />
+            <HeaderLink to={"/players"} title="players" />
+          </div>
         </header>
-        <div className="sm:p-8 h-full flex flex-col justify-center sm:pt-20 p-4 pt-16">
+        <main className="sm:p-8 h-full flex flex-col justify-center sm:pt-20 p-4 pt-25">
           {children}
-        </div>
+        </main>
       </body>
     </html>
   );

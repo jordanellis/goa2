@@ -25,13 +25,13 @@ export default function RootLayout({
           <Link href="/" className="font-bold text-2xl">
             GoA2 Your Happy Place
           </Link>
-          <div className="flex justify-around pt-3">
+          <div className="flex justify-around pt-3 max-w-xl mx-auto">
             <HeaderLink to={"/heroes"} title="heroes" />
             <HeaderLink to={"/matches"} title="matches" />
             <HeaderLink to={"/players"} title="players" />
           </div>
         </header>
-        <main className="sm:p-8 h-full flex flex-col justify-center sm:pt-20 p-4 pt-25">
+        <main className="sm:p-8 h-full flex flex-col justify-center sm:pt-28 p-4 pt-25">
           {children}
         </main>
       </body>

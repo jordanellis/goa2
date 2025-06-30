@@ -1,24 +1,12 @@
 import Button from "@/components/Button";
 import Complexity from "@/components/Complexity";
+import RoleIcon from "@/components/RoleIcon";
 import { GAMES } from "@/data/games";
 import { HEROES } from "@/data/heroes";
-import { HeroName, Role } from "@/types/hero";
-import {
-  Accessibility,
-  Bandage,
-  BicepsFlexed,
-  BowArrow,
-  Disc2,
-  Glasses,
-  HeartPlus,
-  RectangleHorizontal,
-  Rss,
-  Sword,
-  Tractor,
-} from "lucide-react";
+import { HeroName } from "@/types/hero";
+import { RectangleHorizontal } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ReactNode } from "react";
 
 export default async function HeroPage({
   params,
@@ -116,28 +104,6 @@ function StatRow({ base, potential }: { base: number; potential: number }) {
           strokeWidth={1.5}
         />
       ))}
-    </div>
-  );
-}
-
-function RoleIcon({ role }: { role: Role }) {
-  const roleIconMap: Record<Role, ReactNode> = {
-    [Role.DAMAGER]: <BicepsFlexed stroke="#ff480b" />,
-    [Role.DISABLER]: <Accessibility stroke="#ffabe9" />,
-    [Role.DURABLE]: <HeartPlus stroke="#ffabab" />,
-    [Role.FARMING]: <Tractor stroke="#b8fd6f" />,
-    [Role.HEALER]: <Bandage stroke="#fff783" />,
-    [Role.MELEE]: <Sword stroke="#b3e4ff" />,
-    [Role.PUSHER]: <Rss stroke="#ffe7b3" />,
-    [Role.SNIPER]: <BowArrow stroke="#ddaf90" />,
-    [Role.TACTICIAN]: <Glasses stroke="#e9fffd" />,
-    [Role.TOKENS]: <Disc2 stroke="#a37bff" />,
-  };
-
-  return (
-    <div className="flex border-2 border-[#96ffa1] p-2 rounded-xl gap-2">
-      <div>{roleIconMap[role]}</div>
-      <div className="uppercase font-bold">{role}</div>
     </div>
   );
 }

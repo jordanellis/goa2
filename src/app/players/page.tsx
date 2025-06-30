@@ -9,7 +9,7 @@ export default function Players() {
           <Link
             key={name}
             href={`/players/${name}`}
-            className="border first:rounded-t last:rounded-b border-emerald-600 bg-neutral-900 flex"
+            className="border first:rounded-t last:rounded-b border-emerald-600 bg-neutral-900 flex w-40 mx-auto p-1 justify-around"
           >
             {name}
           </Link>

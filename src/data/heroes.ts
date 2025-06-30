@@ -119,7 +119,7 @@ export const HEROES = [
       }
     },
     roles: [Role.MELEE, Role.DISABLER, Role.FARMING],
-    link: ""
+    link: "https://boardgamegeek.com/thread/3469903/tigerclaw-hero-spotlight-2nd-printing"
   },
   {
     name: HeroName.SABINA,
@@ -143,7 +143,7 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.PUSHER],
-    link: ""
+    link: "https://boardgamegeek.com/thread/3461122/sabina-hero-spotlight-2nd-printing"
   },
   {
     name: HeroName.DODGER,
@@ -167,7 +167,7 @@ export const HEROES = [
       }
     },
     roles: [Role.DAMAGER, Role.SNIPER, Role.PUSHER, Role.FARMING, Role.DISABLER],
-    link: ""
+    link: "https://boardgamegeek.com/thread/3474317/dodger-hero-spotlight-2nd-printing"
   },
   {
     name: HeroName.ROWENNA,
@@ -191,7 +191,7 @@ export const HEROES = [
       }
     },
     roles: [Role.MELEE, Role.DURABLE, Role.HEALER, Role.FARMING, Role.PUSHER, Role.TACTICIAN],
-    link: ""
+    link: "https://boardgamegeek.com/thread/3447239/rowenna-hero-spotlight-2nd-printing"
   },
   {
     name: HeroName.GARRUS,
@@ -215,7 +215,7 @@ export const HEROES = [
       }
     },
     roles: [Role.DISABLER, Role.DURABLE, Role.TACTICIAN],
-    link: ""
+    link: "https://boardgamegeek.com/thread/3526542/garrus-hero-spotlight-2nd-printing"
   },
   {
     name: HeroName.BAIN,
@@ -239,7 +239,7 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.SNIPER, Role.HEALER, Role.FARMING, Role.DURABLE],
-    link: ""
+    link: "https://boardgamegeek.com/thread/3500265/bain-hero-spotlight-2nd-printing"
   },
   {
     name: HeroName.WHISPER,
@@ -263,7 +263,7 @@ export const HEROES = [
       }
     },
     roles: [Role.DAMAGER, Role.DURABLE, Role.TACTICIAN, Role.PUSHER],
-    link: ""
+    link: "https://boardgamegeek.com/thread/2888636/whisper-hero-spotlight"
   },
   {
     name: HeroName.MISA,
@@ -287,7 +287,7 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.DURABLE, Role.DAMAGER],
-    link: ""
+    link: "https://boardgamegeek.com/thread/2890793/misa-hero-spotlight"
   },
   {
     name: HeroName.URSAFAR,
@@ -311,7 +311,7 @@ export const HEROES = [
       }
     },
     roles: [Role.DURABLE, Role.PUSHER, Role.FARMING, Role.MELEE],
-    link: ""
+    link: "https://boardgamegeek.com/thread/2896403/ursafar-hero-spotlight"
   },
   {
     name: HeroName.SILVERARROW,
@@ -335,7 +335,7 @@ export const HEROES = [
       }
     },
     roles: [Role.SNIPER, Role.DAMAGER, Role.DISABLER, Role.HEALER, Role.FARMING],
-    link: ""
+    link: "https://boardgamegeek.com/thread/2891788/silverarrow-hero-spotlight-first-printing"
   },
   {
     name: HeroName.MIN,
@@ -359,7 +359,7 @@ export const HEROES = [
       }
     },
     roles: [Role.TOKENS, Role.DISABLER, Role.DAMAGER, Role.MELEE],
-    link: ""
+    link: "https://boardgamegeek.com/thread/2886926/min-hero-spotlight-1st-printing-2022"
   },
   {
     name: HeroName.MRAK,

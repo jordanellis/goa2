@@ -31,9 +31,9 @@ export default function Matches() {
                       ))}
                   </div>
                 </div>
-                <div>
+                <div className="text-center">
                   Won by <span className="lowercase">{winType}</span> after{" "}
-                  {waves} waves
+                  {waves} {waves === 1 ? "wave" : "waves"}
                 </div>
               </div>
             </Link>

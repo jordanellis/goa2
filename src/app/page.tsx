@@ -59,9 +59,6 @@ export default function Home() {
           }}
         />
       </div>
-      <footer className="absolute bottom-1 left-0 right-0 w-fit m-auto">
-        Made with Next.js by jellis
-      </footer>
     </>
   );
 }

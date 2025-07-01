@@ -36,4 +36,26 @@ export const GAMES = [
     ],
     winType: WinType.LIFE
   },
+  {
+    id: 4,
+    date: "06/30/25",
+    players: [
+      {name: PlayerName.NICK, heroName: HeroName.XARGATHA, win: false},
+      {name: PlayerName.JORDAN, heroName: HeroName.DODGER, win: true},
+      {name: PlayerName.DUSTIN, heroName: HeroName.TIGERCLAW, win: true},
+      {name: PlayerName.CHRIS, heroName: HeroName.ARIEN, win: false}
+    ],
+    winType: WinType.LIFE
+  },
+  {
+    id: 5,
+    date: "06/30/25",
+    players: [
+      {name: PlayerName.NICK, heroName: HeroName.ARIEN, win: true},
+      {name: PlayerName.JORDAN, heroName: HeroName.BROGAN, win: false},
+      {name: PlayerName.DUSTIN, heroName: HeroName.WASP, win: false},
+      {name: PlayerName.CHRIS, heroName: HeroName.SABINA, win: true}
+    ],
+    winType: WinType.LIFE
+  },
 ] as Game[]

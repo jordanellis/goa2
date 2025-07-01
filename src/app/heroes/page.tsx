@@ -5,12 +5,21 @@ import Button from "@/components/Button";
 import Complexity from "@/components/Complexity";
 import { HEROES } from "@/data/heroes";
 import { useState } from "react";
+import { Role } from "@/types/hero";
+import RoleIcon, { roleIconMap } from "@/components/RoleIcon";
 
 export default function Heroes() {
   const [complexityFilter, setComplexityFilter] = useState<number[]>([]);
+  const [roleFilter, setRoleFilter] = useState<Role[]>([]);
 
   function updateComplexityFilter(checked: boolean, value: number) {
     setComplexityFilter((prev) =>
+      checked ? [...prev, value] : prev.filter((val) => val !== value)
+    );
+  }
+
+  function updateRoleFilter(checked: boolean, value: Role) {
+    setRoleFilter((prev) =>
       checked ? [...prev, value] : prev.filter((val) => val !== value)
     );
   }
@@ -35,11 +44,33 @@ export default function Heroes() {
             </Checkbox>
           ))}
         </div>
+        <div className="w-fit mx-auto flex flex-wrap justify-center">
+          {Object.entries(roleIconMap).map(([role, Icon]) => (
+            <Checkbox
+              key={role}
+              checked={roleFilter.includes(role as Role)}
+              onChange={(checked) => updateRoleFilter(checked, role as Role)}
+              className="bg-white/10 p-2 sm:p-4 focus:not-data-focus:outline-none data-checked:bg-emerald-700/80 first:sm:rounded-l-full border border-emerald-600 last:sm:rounded-r-full"
+            >
+              <div className="justify-center flex">{Icon}</div>
+              <div>{role}</div>
+            </Checkbox>
+          ))}
+        </div>
         <div className="flex gap-4 flex-wrap justify-center">
-          {HEROES.filter(({ complexity }) => {
-            if (complexityFilter.length === 0) return true;
+          {HEROES.filter(({ complexity, roles }) => {
+            if (complexityFilter.length === 0 && roleFilter.length === 0)
+              return true;
 
-            return complexityFilter.includes(complexity);
+            if (roleFilter.length === 0)
+              return complexityFilter.includes(complexity);
+            else if (complexityFilter.length === 0)
+              return roleFilter.some((role) => roles.includes(role));
+
+            return (
+              complexityFilter.includes(complexity) &&
+              roleFilter.some((role) => roles.includes(role))
+            );
           }).map((hero, i) => (
             <Button
               className="flex flex-col gap-1 items-center w-32"

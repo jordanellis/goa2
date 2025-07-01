@@ -18,21 +18,21 @@ import {
 import { ReactNode, useState } from "react";
 import Button from "./Button";
 
+export const roleIconMap: Record<Role, ReactNode> = {
+  [Role.DAMAGER]: <BicepsFlexed stroke="#ff480b" />,
+  [Role.DISABLER]: <Accessibility stroke="#ffabe9" />,
+  [Role.DURABLE]: <HeartPlus stroke="#ffabab" />,
+  [Role.FARMING]: <Tractor stroke="#b8fd6f" />,
+  [Role.HEALER]: <Bandage stroke="#fff783" />,
+  [Role.MELEE]: <Sword stroke="#b3e4ff" />,
+  [Role.PUSHER]: <Rss stroke="#ffe7b3" />,
+  [Role.SNIPER]: <BowArrow stroke="#ddaf90" />,
+  [Role.TACTICIAN]: <Glasses stroke="#e9fffd" />,
+  [Role.TOKENS]: <Disc2 stroke="#a37bff" />,
+};
+
 export default function RoleIcon({ role }: { role: Role }) {
   const [isOpen, setIsOpen] = useState(false);
-
-  const roleIconMap: Record<Role, ReactNode> = {
-    [Role.DAMAGER]: <BicepsFlexed stroke="#ff480b" />,
-    [Role.DISABLER]: <Accessibility stroke="#ffabe9" />,
-    [Role.DURABLE]: <HeartPlus stroke="#ffabab" />,
-    [Role.FARMING]: <Tractor stroke="#b8fd6f" />,
-    [Role.HEALER]: <Bandage stroke="#fff783" />,
-    [Role.MELEE]: <Sword stroke="#b3e4ff" />,
-    [Role.PUSHER]: <Rss stroke="#ffe7b3" />,
-    [Role.SNIPER]: <BowArrow stroke="#ddaf90" />,
-    [Role.TACTICIAN]: <Glasses stroke="#e9fffd" />,
-    [Role.TOKENS]: <Disc2 stroke="#a37bff" />,
-  };
 
   const RoleLookup: Record<Role, string> = {
     [Role.DAMAGER]:

@@ -81,7 +81,7 @@ export default function Heroes() {
 
   return (
     <>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-4">
         <Disclosure
           as="div"
           className="bg-emerald-900 rounded-2xl w-fit text-rose-50 mx-auto border border-emerald-800"

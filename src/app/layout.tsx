@@ -31,7 +31,7 @@ export default function RootLayout({
             <HeaderLink to={"/players"} title="players" />
           </div>
         </header>
-        <main className="sm:p-8 h-full flex flex-col justify-center sm:pt-28 p-4 pt-25">
+        <main className="sm:p-8 h-full flex flex-col justify-center sm:pt-28 p-4 pt-24">
           {children}
         </main>
       </body>

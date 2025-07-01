@@ -84,7 +84,7 @@ export default function Heroes() {
       <div className="flex flex-col gap-8">
         <Disclosure
           as="div"
-          className="bg-emerald-900 rounded-2xl w-fit text-amber-50 mx-auto border border-emerald-800"
+          className="bg-emerald-900 rounded-2xl w-fit text-rose-50 mx-auto border border-emerald-800"
           defaultOpen={false}
         >
           <DisclosureButton className="group flex w-full items-center gap-2 p-2 cursor-pointer">
@@ -185,7 +185,7 @@ function StatSlider({
   onValueChange: (value: number[]) => void;
 }) {
   return (
-    <div className="flex gap-2 text-amber-50 max-w-200 items-center justify-between">
+    <div className="flex gap-2 text-rose-50 max-w-200 items-center justify-between">
       <label>{label}:</label>
       <Root
         className="relative flex h-5 w-45 touch-none select-none items-center"
@@ -199,10 +199,10 @@ function StatSlider({
         <Track className="relative h-[5px] grow rounded-full bg-black">
           <Range className="absolute h-full rounded-full bg-emerald-300" />
         </Track>
-        <Thumb className="block size-5 rounded-[10px] bg-amber-100 shadow-[0_2px_10px] shadow-black hover:bg-amber-300 focus:shadow-[0_0_0_2px] focus:shadow-white focus:outline-none text-emerald-700 font-extrabold text-center">
+        <Thumb className="block size-5 rounded-[10px] bg-rose-100 shadow-[0_2px_10px] shadow-black hover:bg-rose-300 focus:shadow-[0_0_0_2px] focus:shadow-white focus:outline-none text-emerald-700 font-extrabold text-center">
           {value[0]}
         </Thumb>
-        <Thumb className="block size-5 rounded-[10px] bg-amber-100 shadow-[0_2px_10px] shadow-black hover:bg-amber-300 focus:shadow-[0_0_0_2px] focus:shadow-white focus:outline-none text-emerald-700 font-extrabold text-center">
+        <Thumb className="block size-5 rounded-[10px] bg-rose-100 shadow-[0_2px_10px] shadow-black hover:bg-rose-300 focus:shadow-[0_0_0_2px] focus:shadow-white focus:outline-none text-emerald-700 font-extrabold text-center">
           {value[1]}
         </Thumb>
       </Root>

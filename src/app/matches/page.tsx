@@ -6,7 +6,7 @@ export default function Matches() {
     <>
       <div className="flex flex-col m-auto max-w-sm w-full pt-6">
         {GAMES.sort((a, b) => b.id - a.id).map(
-          ({ id, date, winType, players }) => (
+          ({ id, date, winType, players, waves }) => (
             <Link
               key={id}
               href={`/matches/${id}`}
@@ -32,7 +32,8 @@ export default function Matches() {
                   </div>
                 </div>
                 <div>
-                  Won by <span className="lowercase">{winType}</span>
+                  Won by <span className="lowercase">{winType}</span> after{" "}
+                  {waves} waves
                 </div>
               </div>
             </Link>

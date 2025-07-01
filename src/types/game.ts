@@ -17,5 +17,7 @@ export type Game = {
   id: number
   date: string,
   players: GamePlayer[],
-  winType: WinType
+  winType: WinType,
+  waves: number,
+  type: "short" | "long"
 }

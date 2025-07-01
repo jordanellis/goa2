@@ -12,7 +12,9 @@ export const GAMES = [
       {name: PlayerName.DUSTIN, heroName: HeroName.BROGAN, win: false},
       {name: PlayerName.CHRIS, heroName: HeroName.ARIEN, win: false}
     ],
-    winType: WinType.TIMER
+    winType: WinType.TIMER,
+    waves: 3,
+    type: "short"
   },
   {
     id: 2,
@@ -23,7 +25,9 @@ export const GAMES = [
       {name: PlayerName.DUSTIN, heroName: HeroName.TIGERCLAW, win: true},
       {name: PlayerName.CHRIS, heroName: HeroName.DODGER, win: false}
     ],
-    winType: WinType.LIFE
+    winType: WinType.LIFE,
+    waves: 2,
+    type: "long"
   },
   {
     id: 3,
@@ -34,7 +38,9 @@ export const GAMES = [
       {name: PlayerName.DUSTIN, heroName: HeroName.XARGATHA, win: false},
       {name: PlayerName.CHRIS, heroName: HeroName.ARIEN, win: true}
     ],
-    winType: WinType.LIFE
+    winType: WinType.LIFE,
+    waves: 1,
+    type: "short"
   },
   {
     id: 4,
@@ -45,7 +51,9 @@ export const GAMES = [
       {name: PlayerName.DUSTIN, heroName: HeroName.TIGERCLAW, win: true},
       {name: PlayerName.CHRIS, heroName: HeroName.ARIEN, win: false}
     ],
-    winType: WinType.LIFE
+    winType: WinType.LIFE,
+    waves: 4,
+    type: "long"
   },
   {
     id: 5,
@@ -56,6 +64,8 @@ export const GAMES = [
       {name: PlayerName.DUSTIN, heroName: HeroName.WASP, win: false},
       {name: PlayerName.CHRIS, heroName: HeroName.SABINA, win: true}
     ],
-    winType: WinType.LIFE
+    winType: WinType.LIFE,
+    waves: 1,
+    type: "short"
   },
 ] as Game[]

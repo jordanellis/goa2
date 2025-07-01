@@ -41,7 +41,8 @@ export default async function MatchPage({
           </div>
         </div>
         <div className="italic">
-          Won by <span className="lowercase">{match?.winType}</span>
+          Won by <span className="lowercase">{match?.winType}</span> after{" "}
+          {match?.waves} {match?.waves === 1 ? "wave" : "waves"}
         </div>
       </div>
     </>

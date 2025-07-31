@@ -58,7 +58,7 @@ export default function Home() {
             type: "fitGridWidth",
           }}
         />
-        <div className="w-full m-auto">
+        <div className="w-full m-auto sm:block hidden">
           <BubbleChart />
         </div>
         <div className="h-20" />

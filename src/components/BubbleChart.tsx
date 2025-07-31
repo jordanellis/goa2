@@ -11,7 +11,7 @@ export default function BubbleChart() {
   };
 
   useEffect(() => {
-    var myChart = new Chart("bubbleChart", {
+    const myChart = new Chart("bubbleChart", {
       type: "bubble",
       data: bubbleData,
       options: {

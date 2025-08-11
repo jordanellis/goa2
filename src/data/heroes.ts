@@ -23,7 +23,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.DISABLER, Role.DURABLE, Role.PUSHER],
-    link: "https://boardgamegeek.com/thread/3487765/arien-hero-spotlight-2nd-printing"
+    link: "https://boardgamegeek.com/thread/3487765/arien-hero-spotlight-2nd-printing",
+    themeColor: "#0b90dd"
   },
   {
     name: HeroName.XARGATHA,
@@ -47,7 +48,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.PUSHER, Role.DISABLER, Role.DURABLE, Role.SNIPER],
-    link: "https://boardgamegeek.com/thread/3459245/xargatha-the-changed-hero-spotlight-2nd-printing"
+    link: "https://boardgamegeek.com/thread/3459245/xargatha-the-changed-hero-spotlight-2nd-printing",
+    themeColor: "#0bdd39"
   },
   {
     name: HeroName.BROGAN,
@@ -71,7 +73,8 @@ export const HEROES = [
       }
     },
     roles: [Role.DURABLE, Role.DISABLER, Role.PUSHER, Role.FARMING],
-    link: "https://boardgamegeek.com/thread/3479796/brogan-hero-spotlight-2nd-printing"
+    link: "https://boardgamegeek.com/thread/3479796/brogan-hero-spotlight-2nd-printing",
+    themeColor: "#dd3c0b"
   },
   {
     name: HeroName.WASP,
@@ -95,7 +98,8 @@ export const HEROES = [
       }
     },
     roles: [Role.DISABLER, Role.TACTICIAN, Role.SNIPER],
-    link: "https://boardgamegeek.com/thread/3466028/wasp-hero-spotlight-2nd-printing"
+    link: "https://boardgamegeek.com/thread/3466028/wasp-hero-spotlight-2nd-printing",
+    themeColor: "#6cf5ff"
   },
   {
     name: HeroName.TIGERCLAW,
@@ -119,7 +123,8 @@ export const HEROES = [
       }
     },
     roles: [Role.MELEE, Role.DISABLER, Role.FARMING],
-    link: "https://boardgamegeek.com/thread/3469903/tigerclaw-hero-spotlight-2nd-printing"
+    link: "https://boardgamegeek.com/thread/3469903/tigerclaw-hero-spotlight-2nd-printing",
+    themeColor: "#dd4e0b"
   },
   {
     name: HeroName.SABINA,
@@ -143,7 +148,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.PUSHER],
-    link: "https://boardgamegeek.com/thread/3461122/sabina-hero-spotlight-2nd-printing"
+    link: "https://boardgamegeek.com/thread/3461122/sabina-hero-spotlight-2nd-printing",
+    themeColor: "#8d4922"
   },
   {
     name: HeroName.DODGER,
@@ -167,7 +173,8 @@ export const HEROES = [
       }
     },
     roles: [Role.DAMAGER, Role.SNIPER, Role.PUSHER, Role.FARMING, Role.DISABLER],
-    link: "https://boardgamegeek.com/thread/3474317/dodger-hero-spotlight-2nd-printing"
+    link: "https://boardgamegeek.com/thread/3474317/dodger-hero-spotlight-2nd-printing",
+    themeColor: "#9eb9bd"
   },
   {
     name: HeroName.ROWENNA,
@@ -191,7 +198,8 @@ export const HEROES = [
       }
     },
     roles: [Role.MELEE, Role.DURABLE, Role.HEALER, Role.FARMING, Role.PUSHER, Role.TACTICIAN],
-    link: "https://boardgamegeek.com/thread/3447239/rowenna-hero-spotlight-2nd-printing"
+    link: "https://boardgamegeek.com/thread/3447239/rowenna-hero-spotlight-2nd-printing",
+    themeColor: "#606a7a"
   },
   {
     name: HeroName.GARRUS,
@@ -215,7 +223,8 @@ export const HEROES = [
       }
     },
     roles: [Role.DISABLER, Role.DURABLE, Role.TACTICIAN],
-    link: "https://boardgamegeek.com/thread/3526542/garrus-hero-spotlight-2nd-printing"
+    link: "https://boardgamegeek.com/thread/3526542/garrus-hero-spotlight-2nd-printing",
+    themeColor: "#eb2626"
   },
   {
     name: HeroName.BAIN,
@@ -239,7 +248,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.SNIPER, Role.HEALER, Role.FARMING, Role.DURABLE],
-    link: "https://boardgamegeek.com/thread/3500265/bain-hero-spotlight-2nd-printing"
+    link: "https://boardgamegeek.com/thread/3500265/bain-hero-spotlight-2nd-printing",
+    themeColor: "#a1286b"
   },
   {
     name: HeroName.WHISPER,
@@ -263,7 +273,8 @@ export const HEROES = [
       }
     },
     roles: [Role.DAMAGER, Role.DURABLE, Role.TACTICIAN, Role.PUSHER],
-    link: "https://boardgamegeek.com/thread/2888636/whisper-hero-spotlight"
+    link: "https://boardgamegeek.com/thread/2888636/whisper-hero-spotlight",
+    themeColor: "#5e5e5e"
   },
   {
     name: HeroName.MISA,
@@ -287,7 +298,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.DURABLE, Role.DAMAGER],
-    link: "https://boardgamegeek.com/thread/2890793/misa-hero-spotlight"
+    link: "https://boardgamegeek.com/thread/2890793/misa-hero-spotlight",
+    themeColor: "#3c6ab4"
   },
   {
     name: HeroName.URSAFAR,
@@ -311,7 +323,8 @@ export const HEROES = [
       }
     },
     roles: [Role.DURABLE, Role.PUSHER, Role.FARMING, Role.MELEE],
-    link: "https://boardgamegeek.com/thread/2896403/ursafar-hero-spotlight"
+    link: "https://boardgamegeek.com/thread/2896403/ursafar-hero-spotlight",
+    themeColor: "#ad3d3d"
   },
   {
     name: HeroName.SILVERARROW,
@@ -335,7 +348,8 @@ export const HEROES = [
       }
     },
     roles: [Role.SNIPER, Role.DAMAGER, Role.DISABLER, Role.HEALER, Role.FARMING],
-    link: "https://boardgamegeek.com/thread/2891788/silverarrow-hero-spotlight-first-printing"
+    link: "https://boardgamegeek.com/thread/2891788/silverarrow-hero-spotlight-first-printing",
+    themeColor: "#288840"
   },
   {
     name: HeroName.MIN,
@@ -359,7 +373,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TOKENS, Role.DISABLER, Role.DAMAGER, Role.MELEE],
-    link: "https://boardgamegeek.com/thread/2886926/min-hero-spotlight-1st-printing-2022"
+    link: "https://boardgamegeek.com/thread/2886926/min-hero-spotlight-1st-printing-2022",
+    themeColor: "#fd4007"
   },
   {
     name: HeroName.MRAK,
@@ -383,7 +398,8 @@ export const HEROES = [
       }
     },
     roles: [Role.MELEE, Role.TOKENS, Role.DURABLE, Role.DISABLER, Role.TACTICIAN],
-    link: ""
+    link: "https://boardgamegeek.com/thread/3449043/mrak-hero-spotlight-2nd-printing",
+    themeColor: "#0fc23c"
   },
   {
     name: HeroName.CUTTER,
@@ -407,7 +423,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.DISABLER, Role.FARMING],
-    link: ""
+    link: "https://boardgamegeek.com/thread/2893527/cutter-hero-spotlight",
+    themeColor: "#8b3e6b"
   },
   {
     name: HeroName.TRINKETS,
@@ -431,7 +448,8 @@ export const HEROES = [
       }
     },
     roles: [Role.SNIPER, Role.DAMAGER, Role.PUSHER],
-    link: ""
+    link: "https://boardgamegeek.com/thread/2910990/trinkets-hero-spotlight",
+    themeColor: "#21a5bd"
   },
   {
     name: HeroName.TALI,
@@ -455,7 +473,8 @@ export const HEROES = [
       }
     },
     roles: [Role.DAMAGER, Role.PUSHER, Role.HEALER, Role.DURABLE, Role.TOKENS],
-    link: ""
+    link: "https://boardgamegeek.com/thread/2893302/tali-hero-spotlight-1st-printing",
+    themeColor: "#c933c1"
   },
   {
     name: HeroName.SWIFT,
@@ -479,7 +498,8 @@ export const HEROES = [
       }
     },
     roles: [Role.SNIPER, Role.FARMING, Role.TACTICIAN],
-    link: ""
+    link: "",
+    themeColor: "#a7892a"
   },
   {
     name: HeroName.WUK,
@@ -503,7 +523,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TOKENS, Role.PUSHER, Role.DURABLE, Role.SNIPER, Role.TACTICIAN, Role.HEALER],
-    link: ""
+    link: "",
+    themeColor: "#ff5d5d"
   },
   {
     name: HeroName.HANU,
@@ -527,7 +548,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.SNIPER, Role.PUSHER],
-    link: ""
+    link: "",
+    themeColor: "#ff5555"
   },
   {
     name: HeroName.BRYNN,
@@ -551,7 +573,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.DAMAGER, Role.DURABLE],
-    link: ""
+    link: "",
+    themeColor: "#b17c4b"
   },
   {
     name: HeroName.MORTIMER,
@@ -575,7 +598,8 @@ export const HEROES = [
       }
     },
     roles: [Role.MELEE, Role.TOKENS, Role.FARMING, Role.DURABLE, Role.PUSHER],
-    link: ""
+    link: "",
+    themeColor: "#51f05e"
   },
   {
     name: HeroName.WIDGET,
@@ -599,7 +623,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.PUSHER, Role.DAMAGER],
-    link: ""
+    link: "",
+    themeColor: "#0b9bdd"
   },
   {
     name: HeroName.SNORRI,
@@ -623,7 +648,8 @@ export const HEROES = [
       }
     },
     roles: [Role.SNIPER, Role.FARMING, Role.DURABLE, Role.DAMAGER, Role.PUSHER, Role.HEALER],
-    link: ""
+    link: "",
+    themeColor: "#2a8b0d"
   },
   {
     name: HeroName.RAZZLE,
@@ -647,7 +673,8 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.MELEE],
-    link: ""
+    link: "",
+    themeColor: "#79a0e0"
   },
   {
     name: HeroName.GYDION,
@@ -671,7 +698,8 @@ export const HEROES = [
       }
     },
     roles: [Role.SNIPER, Role.TACTICIAN, Role.FARMING, Role.DAMAGER, Role.PUSHER, Role.TOKENS],
-    link: ""
+    link: "",
+    themeColor: "#aca9a9"
   },
   {
     name: HeroName.NEBKHER,
@@ -695,7 +723,8 @@ export const HEROES = [
       }
     },
     roles: [Role.DISABLER, Role.TOKENS, Role.SNIPER],
-    link: ""
+    link: "",
+    themeColor: "#ddd127"
   },
   {
     name: HeroName.IGNATIA,
@@ -719,7 +748,8 @@ export const HEROES = [
       }
     },
     roles: [Role.SNIPER, Role.DAMAGER, Role.TOKENS, Role.TACTICIAN, Role.PUSHER],
-    link: ""
+    link: "",
+    themeColor: "#dd0b0b"
   },
   {
     name: HeroName.TAKAHIDE,
@@ -743,7 +773,8 @@ export const HEROES = [
       }
     },
     roles: [Role.DURABLE, Role.SNIPER, Role.TACTICIAN, Role.DAMAGER, Role.FARMING],
-    link: ""
+    link: "",
+    themeColor: "#b1320c"
   },
   {
     name: HeroName.EMMITT,
@@ -767,6 +798,7 @@ export const HEROES = [
       }
     },
     roles: [Role.MELEE, Role.TACTICIAN, Role.DURABLE, Role.DISABLER, Role.TOKENS],
-    link: ""
+    link: "",
+    themeColor: "#855234"
   }
 ] as Hero[]

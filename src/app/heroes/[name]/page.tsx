@@ -4,7 +4,10 @@ import RoleIcon from "@/components/RoleIcon";
 import { GAMES } from "@/data/games";
 import { HEROES } from "@/data/heroes";
 import { HeroName } from "@/types/hero";
+import { getHeroImage } from "@/util/getHeroImage";
+import { pSBC } from "@/util/pSBC";
 import { RectangleHorizontal } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -20,7 +23,7 @@ export default async function HeroPage({
     notFound();
   }
 
-  const { name, complexity, stats, roles, link } = hero;
+  const { name, complexity, stats, roles, link, themeColor } = hero;
 
   const statBlock = "flex justify-between w-72 items-center";
 
@@ -31,16 +34,27 @@ export default async function HeroPage({
       <Button to={`/heroes`}>{"< Heroes"}</Button>
       <div className="flex flex-col gap-8 items-center pt-6">
         <div className="flex flex-col gap-1 items-center">
+          <Image
+            className="rounded-full border-2"
+            src={getHeroImage(name)}
+            style={{ borderColor: themeColor }}
+            alt=""
+            height={105}
+            width={105}
+          />
           <div className="text-2xl font-bold">{name}</div>
           <Complexity complexity={complexity} />
         </div>
-        <div className="flex-col flex items-center gap-3 text-emerald-200">
+        <div
+          className={`flex-col flex items-center gap-3 text-[${themeColor}]`}
+        >
           <div className="flex flex-col sm:flex-row gap-3">
             <div className={statBlock}>
               Attack:
               <StatRow
                 base={stats.attack.base}
                 potential={stats.attack.potential}
+                heroColor={themeColor}
               />
             </div>
             <div className={statBlock}>
@@ -48,6 +62,7 @@ export default async function HeroPage({
               <StatRow
                 base={stats.initiative.base}
                 potential={stats.initiative.potential}
+                heroColor={themeColor}
               />
             </div>
           </div>
@@ -57,6 +72,7 @@ export default async function HeroPage({
               <StatRow
                 base={stats.defense.base}
                 potential={stats.defense.potential}
+                heroColor={themeColor}
               />
             </div>
             <div className={statBlock}>
@@ -64,6 +80,7 @@ export default async function HeroPage({
               <StatRow
                 base={stats.movement.base}
                 potential={stats.movement.potential}
+                heroColor={themeColor}
               />
             </div>
           </div>
@@ -87,20 +104,30 @@ export default async function HeroPage({
   );
 }
 
-function StatRow({ base, potential }: { base: number; potential: number }) {
+function StatRow({
+  base,
+  potential,
+  heroColor,
+}: {
+  base: number;
+  potential: number;
+  heroColor: string;
+}) {
+  const borderColor = pSBC(0.15, heroColor);
+
   return (
-    <div className="flex border-2 border-[#96ffa1] p-1 rounded-xl">
+    <div className={`flex border-2 border-[${heroColor}] p-1 rounded-xl`}>
       {Array.from({ length: 8 }, (_, index) => (
         <RectangleHorizontal
           key={index}
           fill={
             index < base
-              ? "#3aab47"
+              ? pSBC(-0.35, heroColor) || "#3aab47"
               : index < potential
-              ? "#a9f49d"
+              ? pSBC(0.25, heroColor) || "#a9f49d"
               : "transparent"
           }
-          stroke="#076913"
+          stroke={pSBC(-0.5, heroColor) || "#076913"}
           strokeWidth={1.5}
         />
       ))}

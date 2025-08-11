@@ -71,7 +71,8 @@ export type Hero = {
     }
   },
   roles: Role[],
-  link: string
+  link: string,
+  themeColor: string,
 }
 
 export type MongoHero = { 

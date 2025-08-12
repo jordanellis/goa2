@@ -498,7 +498,7 @@ export const HEROES = [
       }
     },
     roles: [Role.SNIPER, Role.FARMING, Role.TACTICIAN],
-    link: "",
+    link: "https://boardgamegeek.com/thread/2889490/swift-character-spotlight",
     themeColor: "#a7892a"
   },
   {
@@ -523,7 +523,7 @@ export const HEROES = [
       }
     },
     roles: [Role.TOKENS, Role.PUSHER, Role.DURABLE, Role.SNIPER, Role.TACTICIAN, Role.HEALER],
-    link: "",
+    link: "https://boardgamegeek.com/thread/2894009/wuk-hero-spotlight",
     themeColor: "#ff5d5d"
   },
   {
@@ -548,7 +548,7 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.SNIPER, Role.PUSHER],
-    link: "",
+    link: "https://boardgamegeek.com/thread/2894481/hanu-hero-spotlight",
     themeColor: "#ff5555"
   },
   {
@@ -573,7 +573,7 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.DAMAGER, Role.DURABLE],
-    link: "",
+    link: "https://boardgamegeek.com/thread/3456595/brynn-hero-spotlight-2nd-printing",
     themeColor: "#b17c4b"
   },
   {
@@ -598,7 +598,7 @@ export const HEROES = [
       }
     },
     roles: [Role.MELEE, Role.TOKENS, Role.FARMING, Role.DURABLE, Role.PUSHER],
-    link: "",
+    link: "https://boardgamegeek.com/thread/3453397/mortimer-hero-spotlight-2nd-printing",
     themeColor: "#51f05e"
   },
   {
@@ -623,7 +623,7 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.PUSHER, Role.DAMAGER],
-    link: "",
+    link: "https://boardgamegeek.com/thread/3454879/widget-and-pyro-spotlight",
     themeColor: "#0b9bdd"
   },
   {
@@ -648,7 +648,7 @@ export const HEROES = [
       }
     },
     roles: [Role.SNIPER, Role.FARMING, Role.DURABLE, Role.DAMAGER, Role.PUSHER, Role.HEALER],
-    link: "",
+    link: "https://www.youtube.com/watch?v=u2Jw0NirUGY",
     themeColor: "#2a8b0d"
   },
   {
@@ -673,7 +673,7 @@ export const HEROES = [
       }
     },
     roles: [Role.TACTICIAN, Role.MELEE],
-    link: "",
+    link: "https://www.youtube.com/watch?v=VCxNLve_-O8",
     themeColor: "#79a0e0"
   },
   {
@@ -698,7 +698,7 @@ export const HEROES = [
       }
     },
     roles: [Role.SNIPER, Role.TACTICIAN, Role.FARMING, Role.DAMAGER, Role.PUSHER, Role.TOKENS],
-    link: "",
+    link: "https://www.youtube.com/watch?v=ArQe1jBTAEg",
     themeColor: "#aca9a9"
   },
   {
@@ -723,7 +723,7 @@ export const HEROES = [
       }
     },
     roles: [Role.DISABLER, Role.TOKENS, Role.SNIPER],
-    link: "",
+    link: "https://boardgamegeek.com/thread/2896563/nebkher-hero-spotlight",
     themeColor: "#ddd127"
   },
   {
@@ -748,7 +748,7 @@ export const HEROES = [
       }
     },
     roles: [Role.SNIPER, Role.DAMAGER, Role.TOKENS, Role.TACTICIAN, Role.PUSHER],
-    link: "",
+    link: "https://boardgamegeek.com/thread/2887471/ignatia-hero-spotlight-1st-printing",
     themeColor: "#dd0b0b"
   },
   {
@@ -773,7 +773,7 @@ export const HEROES = [
       }
     },
     roles: [Role.DURABLE, Role.SNIPER, Role.TACTICIAN, Role.DAMAGER, Role.FARMING],
-    link: "",
+    link: "https://boardgamegeek.com/thread/3451226/takahide-hero-spotlight-2nd-printing",
     themeColor: "#b1320c"
   },
   {
@@ -798,7 +798,7 @@ export const HEROES = [
       }
     },
     roles: [Role.MELEE, Role.TACTICIAN, Role.DURABLE, Role.DISABLER, Role.TOKENS],
-    link: "",
+    link: "https://boardgamegeek.com/thread/3459593/emmitt-hero-spotlight-2nd-printing",
     themeColor: "#855234"
   }
 ] as Hero[]

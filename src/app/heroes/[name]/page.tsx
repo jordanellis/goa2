@@ -113,10 +113,10 @@ function StatRow({
   potential: number;
   heroColor: string;
 }) {
-  const borderColor = pSBC(0.15, heroColor);
+  const borderColor = pSBC(0.15, heroColor) || "#ffffff";
 
   return (
-    <div className={`flex border-2 border-[${heroColor}] p-1 rounded-xl`}>
+    <div className={`flex border-2 p-1 rounded-xl`} style={{ borderColor }}>
       {Array.from({ length: 8 }, (_, index) => (
         <RectangleHorizontal
           key={index}

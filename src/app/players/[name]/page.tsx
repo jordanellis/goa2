@@ -39,61 +39,61 @@ export default function PlayerBio() {
       <Button className="w-fit" to="/players">
         {"< Players"}
       </Button>
-      <div className="flex flex-col m-auto max-w-md w-full pt-6">
-        <Card className="bg-transparent !p-0">
-          <div className="p-4">
-            <div className="flex justify-between pb-4 sm:flex-row flex-col gap-2">
-              <div className="text-xl mx-auto">{player.name}</div>
-              <div className="text-xl mx-auto">
-                Birthplace: {player.birthplace}
-              </div>
-            </div>
-            <div className="pb-8 text-neutral-300">{player.tidbit}</div>
-            <div className="text-center">
-              Current win rate:{" "}
-              {games ? `${(100 * (wins / games)).toFixed(2)}%` : "--"}
+      <div className="flex flex-col m-auto max-w-md w-full pt-6 gap-3">
+        <Card className="bg-transparent">
+          <div className="flex justify-between pb-4 sm:flex-row flex-col gap-2">
+            <div className="text-xl mx-auto">{player.name}</div>
+            <div className="text-xl mx-auto">
+              Birthplace: {player.birthplace}
             </div>
           </div>
-
-          <AgGridReact
-            theme={theme}
-            gridOptions={{
-              onGridReady: (params) => {
-                params.api.sizeColumnsToFit();
-              },
-              domLayout: "autoHeight",
-            }}
-            rowData={buildPlayerHeroGridData(player.name)}
-            columnDefs={[
-              {
-                field: "hero",
-                resizable: false,
-                minWidth: 130,
-              },
-              {
-                field: "games",
-                resizable: false,
-                sort: "desc",
-                sortingOrder: ["desc", "asc", null],
-              },
-              {
-                field: "winPercentage",
-                headerName: "Win %",
-                resizable: false,
-                valueFormatter: (params) => {
-                  if (typeof params.value === "number") {
-                    return (params.value * 100).toFixed(2) + "%";
-                  }
-                  return params.value;
-                },
-                sortingOrder: ["desc", "asc", null],
-              },
-            ]}
-            autoSizeStrategy={{
-              type: "fitGridWidth",
-            }}
-          />
+          <div className="pb-8 text-neutral-300">{player.tidbit}</div>
+          <div className="text-center">
+            Current win rate:{" "}
+            {games ? `${(100 * (wins / games)).toFixed(2)}%` : "--"}
+          </div>
         </Card>
+        <AgGridReact
+          theme={theme}
+          gridOptions={{
+            onGridReady: (params) => {
+              params.api.sizeColumnsToFit();
+            },
+            domLayout: "autoHeight",
+          }}
+          rowData={buildPlayerHeroGridData(player.name)}
+          columnDefs={[
+            {
+              field: "hero",
+              resizable: false,
+              minWidth: 130,
+              suppressMovable: true,
+            },
+            {
+              field: "games",
+              resizable: false,
+              sort: "desc",
+              sortingOrder: ["desc", "asc", null],
+              suppressMovable: true,
+            },
+            {
+              field: "winPercentage",
+              headerName: "Win %",
+              resizable: false,
+              valueFormatter: (params) => {
+                if (typeof params.value === "number") {
+                  return (params.value * 100).toFixed(2) + "%";
+                }
+                return params.value;
+              },
+              sortingOrder: ["desc", "asc", null],
+              suppressMovable: true,
+            },
+          ]}
+          autoSizeStrategy={{
+            type: "fitGridWidth",
+          }}
+        />
       </div>
     </>
   );

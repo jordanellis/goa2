@@ -42,16 +42,19 @@ export default function Home() {
               onCellClicked: (cell) =>
                 router.push(`/heroes/${cell.data?.hero}`),
               minWidth: 140,
+              suppressMovable: true,
             },
             {
               field: "wins",
               resizable: false,
               sortingOrder: ["desc", "asc", null],
+              suppressMovable: true,
             },
             {
               field: "games",
               resizable: false,
               sortingOrder: ["desc", "asc", null],
+              suppressMovable: true,
             },
           ]}
           autoSizeStrategy={{

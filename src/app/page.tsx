@@ -41,7 +41,7 @@ export default function Home() {
               resizable: false,
               onCellClicked: (cell) =>
                 router.push(`/heroes/${cell.data?.hero}`),
-              minWidth: 180,
+              minWidth: 140,
             },
             {
               field: "wins",

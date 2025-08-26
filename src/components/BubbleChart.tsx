@@ -20,8 +20,7 @@ export default function BubbleChart() {
         scales: {
           x: {
             ticks: {
-              callback: function (value, index, ticks) {
-                console.log(index);
+              callback: function (_value, index, _ticks) {
                 return HEROES.sort((a, b) => {
                   if (a.name < b.name) {
                     return -1;

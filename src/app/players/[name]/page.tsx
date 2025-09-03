@@ -60,13 +60,17 @@ export default function PlayerBio() {
               params.api.sizeColumnsToFit();
             },
             domLayout: "autoHeight",
+            autoSizeStrategy: {
+              type: "fitGridWidth",
+              defaultMinWidth: 80,
+            },
           }}
           rowData={buildPlayerHeroGridData(player.name)}
           columnDefs={[
             {
               field: "hero",
               resizable: false,
-              minWidth: 130,
+              minWidth: 125,
               suppressMovable: true,
             },
             {

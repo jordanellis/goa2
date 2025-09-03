@@ -10,9 +10,8 @@ export enum Role {
   PUSHER = "pusher",
   SNIPER = "sniper",
   TACTICIAN = "tactician",
-  TOKENS = "tokens"
+  TOKENS = "tokens",
 }
-
 
 export enum HeroName {
   ARIEN = "ARIEN",
@@ -46,35 +45,35 @@ export enum HeroName {
   MRAK = "MRAK",
   SNORRI = "SNORRI",
   RAZZLE = "RAZZLE",
-  GYDION = "GYDION"
+  GYDION = "GYDION",
 }
 
 export type Hero = {
-  name: HeroName,
-  complexity: number
+  name: HeroName;
+  complexity: number;
   stats: {
     attack: {
-      base: number,
-      potential: number
-    },
+      base: number;
+      potential: number;
+    };
     initiative: {
-      base: number,
-      potential: number
-    },
+      base: number;
+      potential: number;
+    };
     defense: {
-      base: number,
-      potential: number
-    },
+      base: number;
+      potential: number;
+    };
     movement: {
-      base: number,
-      potential: number
-    }
-  },
-  roles: Role[],
-  link: string,
-  themeColor: string,
-}
+      base: number;
+      potential: number;
+    };
+  };
+  roles: Role[];
+  link: string;
+  themeColor: string;
+};
 
-export type MongoHero = { 
-  _id?: ObjectId
-} & Hero
+export type MongoHero = {
+  _id?: ObjectId;
+} & Hero;

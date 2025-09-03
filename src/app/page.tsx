@@ -33,6 +33,10 @@ export default function Home() {
             onGridReady: (params) => {
               params.api.sizeColumnsToFit();
             },
+            autoSizeStrategy: {
+              type: "fitGridWidth",
+              defaultMinWidth: 80,
+            },
           }}
           rowData={buildHeroGridData()}
           columnDefs={[
@@ -41,7 +45,7 @@ export default function Home() {
               resizable: false,
               onCellClicked: (cell) =>
                 router.push(`/heroes/${cell.data?.hero}`),
-              minWidth: 140,
+              minWidth: 125,
               suppressMovable: true,
             },
             {

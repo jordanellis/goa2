@@ -21,11 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={geist.className}>
       <body className="antialiased h-full">
-        <header className="w-full bg-linear-to-t from-emerald-950 to-emerald-800 p-2 text-center absolute top-0 text-rose-100">
+        <header className="w-full bg-linear-to-t from-emerald-950 to-emerald-800 p-2 text-center absolute top-0 text-rose-100 flex flex-col gap-2">
           <Link href="/" className="font-bold text-2xl">
             GoA2 Your Happy Place
           </Link>
-          <div className="flex justify-around pt-3 max-w-xl mx-auto">
+          <div className="flex justify-around pt-3 max-w-xl mx-auto w-full">
             <HeaderLink to={"/heroes"} title="heroes" />
             <HeaderLink to={"/matches"} title="matches" />
             <HeaderLink to={"/players"} title="players" />

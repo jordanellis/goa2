@@ -7,24 +7,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 4,
-        potential: 4
+        potential: 4,
       },
       defense: {
         base: 5,
-        potential: 6
+        potential: 6,
       },
       movement: {
         base: 5,
-        potential: 6
-      }
+        potential: 6,
+      },
     },
     roles: [Role.TACTICIAN, Role.DISABLER, Role.DURABLE, Role.PUSHER],
     link: "https://boardgamegeek.com/thread/3487765/arien-hero-spotlight-2nd-printing",
-    themeColor: "#0b90dd"
+    themeColor: "#0b90dd",
   },
   {
     name: HeroName.XARGATHA,
@@ -32,24 +32,30 @@ export const HEROES = [
     stats: {
       attack: {
         base: 5,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 3,
-        potential: 3
+        potential: 3,
       },
       defense: {
         base: 6,
-        potential: 6
+        potential: 6,
       },
       movement: {
         base: 6,
-        potential: 6
-      }
+        potential: 6,
+      },
     },
-    roles: [Role.TACTICIAN, Role.PUSHER, Role.DISABLER, Role.DURABLE, Role.SNIPER],
+    roles: [
+      Role.TACTICIAN,
+      Role.PUSHER,
+      Role.DISABLER,
+      Role.DURABLE,
+      Role.SNIPER,
+    ],
     link: "https://boardgamegeek.com/thread/3459245/xargatha-the-changed-hero-spotlight-2nd-printing",
-    themeColor: "#0bdd39"
+    themeColor: "#0bdd39",
   },
   {
     name: HeroName.BROGAN,
@@ -57,24 +63,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 7,
-        potential: 7
+        potential: 7,
       },
       initiative: {
         base: 1,
-        potential: 1
+        potential: 1,
       },
       defense: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       movement: {
         base: 2,
-        potential: 4
-      }
+        potential: 4,
+      },
     },
     roles: [Role.DURABLE, Role.DISABLER, Role.PUSHER, Role.FARMING],
     link: "https://boardgamegeek.com/thread/3479796/brogan-hero-spotlight-2nd-printing",
-    themeColor: "#dd3c0b"
+    themeColor: "#dd3c0b",
   },
   {
     name: HeroName.WASP,
@@ -82,24 +88,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 5,
-        potential: 5
+        potential: 5,
       },
       initiative: {
         base: 6,
-        potential: 6
+        potential: 6,
       },
       defense: {
         base: 4,
-        potential: 5
+        potential: 5,
       },
       movement: {
         base: 5,
-        potential: 5
-      }
+        potential: 5,
+      },
     },
     roles: [Role.DISABLER, Role.TACTICIAN, Role.SNIPER],
     link: "https://boardgamegeek.com/thread/3466028/wasp-hero-spotlight-2nd-printing",
-    themeColor: "#6cf5ff"
+    themeColor: "#6cf5ff",
   },
   {
     name: HeroName.TIGERCLAW,
@@ -107,24 +113,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 4,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       defense: {
         base: 1,
-        potential: 4
+        potential: 4,
       },
       movement: {
         base: 7,
-        potential: 8
-      }
+        potential: 8,
+      },
     },
     roles: [Role.MELEE, Role.DISABLER, Role.FARMING],
     link: "https://boardgamegeek.com/thread/3469903/tigerclaw-hero-spotlight-2nd-printing",
-    themeColor: "#dd4e0b"
+    themeColor: "#dd4e0b",
   },
   {
     name: HeroName.SABINA,
@@ -132,24 +138,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 1,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 5,
-        potential: 5
+        potential: 5,
       },
       defense: {
         base: 3,
-        potential: 3
+        potential: 3,
       },
       movement: {
         base: 5,
-        potential: 6
-      }
+        potential: 6,
+      },
     },
     roles: [Role.TACTICIAN, Role.PUSHER],
     link: "https://boardgamegeek.com/thread/3461122/sabina-hero-spotlight-2nd-printing",
-    themeColor: "#8d4922"
+    themeColor: "#8d4922",
   },
   {
     name: HeroName.DODGER,
@@ -157,24 +163,30 @@ export const HEROES = [
     stats: {
       attack: {
         base: 3,
-        potential: 3
+        potential: 3,
       },
       initiative: {
         base: 7,
-        potential: 7
+        potential: 7,
       },
       defense: {
         base: 2,
-        potential: 5
+        potential: 5,
       },
       movement: {
         base: 5,
-        potential: 5
-      }
+        potential: 5,
+      },
     },
-    roles: [Role.DAMAGER, Role.SNIPER, Role.PUSHER, Role.FARMING, Role.DISABLER],
+    roles: [
+      Role.DAMAGER,
+      Role.SNIPER,
+      Role.PUSHER,
+      Role.FARMING,
+      Role.DISABLER,
+    ],
     link: "https://boardgamegeek.com/thread/3474317/dodger-hero-spotlight-2nd-printing",
-    themeColor: "#9eb9bd"
+    themeColor: "#9eb9bd",
   },
   {
     name: HeroName.ROWENNA,
@@ -182,24 +194,31 @@ export const HEROES = [
     stats: {
       attack: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 4,
-        potential: 4
+        potential: 4,
       },
       defense: {
         base: 7,
-        potential: 7
+        potential: 7,
       },
       movement: {
         base: 3,
-        potential: 5
-      }
+        potential: 5,
+      },
     },
-    roles: [Role.MELEE, Role.DURABLE, Role.HEALER, Role.FARMING, Role.PUSHER, Role.TACTICIAN],
+    roles: [
+      Role.MELEE,
+      Role.DURABLE,
+      Role.HEALER,
+      Role.FARMING,
+      Role.PUSHER,
+      Role.TACTICIAN,
+    ],
     link: "https://boardgamegeek.com/thread/3447239/rowenna-hero-spotlight-2nd-printing",
-    themeColor: "#606a7a"
+    themeColor: "#606a7a",
   },
   {
     name: HeroName.GARRUS,
@@ -207,24 +226,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 3,
-        potential: 3
+        potential: 3,
       },
       defense: {
         base: 7,
-        potential: 7
+        potential: 7,
       },
       movement: {
         base: 5,
-        potential: 6
-      }
+        potential: 6,
+      },
     },
     roles: [Role.DISABLER, Role.DURABLE, Role.TACTICIAN],
     link: "https://boardgamegeek.com/thread/3526542/garrus-hero-spotlight-2nd-printing",
-    themeColor: "#eb2626"
+    themeColor: "#eb2626",
   },
   {
     name: HeroName.BAIN,
@@ -232,24 +251,30 @@ export const HEROES = [
     stats: {
       attack: {
         base: 5,
-        potential: 5
+        potential: 5,
       },
       initiative: {
         base: 4,
-        potential: 4
+        potential: 4,
       },
       defense: {
         base: 4,
-        potential: 6
+        potential: 6,
       },
       movement: {
         base: 5,
-        potential: 6
-      }
+        potential: 6,
+      },
     },
-    roles: [Role.TACTICIAN, Role.SNIPER, Role.HEALER, Role.FARMING, Role.DURABLE],
+    roles: [
+      Role.TACTICIAN,
+      Role.SNIPER,
+      Role.HEALER,
+      Role.FARMING,
+      Role.DURABLE,
+    ],
     link: "https://boardgamegeek.com/thread/3500265/bain-hero-spotlight-2nd-printing",
-    themeColor: "#a1286b"
+    themeColor: "#a1286b",
   },
   {
     name: HeroName.WHISPER,
@@ -257,24 +282,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 7,
-        potential: 7
+        potential: 7,
       },
       initiative: {
         base: 7,
-        potential: 7
+        potential: 7,
       },
       defense: {
         base: 4,
-        potential: 4
+        potential: 4,
       },
       movement: {
         base: 3,
-        potential: 5
-      }
+        potential: 5,
+      },
     },
     roles: [Role.DAMAGER, Role.DURABLE, Role.TACTICIAN, Role.PUSHER],
     link: "https://boardgamegeek.com/thread/2888636/whisper-hero-spotlight",
-    themeColor: "#5e5e5e"
+    themeColor: "#5e5e5e",
   },
   {
     name: HeroName.MISA,
@@ -282,24 +307,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 6,
-        potential: 6
+        potential: 6,
       },
       initiative: {
         base: 7,
-        potential: 7
+        potential: 7,
       },
       defense: {
         base: 5,
-        potential: 5
+        potential: 5,
       },
       movement: {
         base: 1,
-        potential: 8
-      }
+        potential: 8,
+      },
     },
     roles: [Role.TACTICIAN, Role.DURABLE, Role.DAMAGER],
     link: "https://boardgamegeek.com/thread/2890793/misa-hero-spotlight",
-    themeColor: "#3c6ab4"
+    themeColor: "#3c6ab4",
   },
   {
     name: HeroName.URSAFAR,
@@ -307,24 +332,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 6,
-        potential: 6
+        potential: 6,
       },
       initiative: {
         base: 5,
-        potential: 5
+        potential: 5,
       },
       defense: {
         base: 6,
-        potential: 6
+        potential: 6,
       },
       movement: {
         base: 1,
-        potential: 5
-      }
+        potential: 5,
+      },
     },
     roles: [Role.DURABLE, Role.PUSHER, Role.FARMING, Role.MELEE],
     link: "https://boardgamegeek.com/thread/2896403/ursafar-hero-spotlight",
-    themeColor: "#ad3d3d"
+    themeColor: "#ad3d3d",
   },
   {
     name: HeroName.SILVERARROW,
@@ -332,24 +357,30 @@ export const HEROES = [
     stats: {
       attack: {
         base: 2,
-        potential: 2
+        potential: 2,
       },
       initiative: {
         base: 7,
-        potential: 7
+        potential: 7,
       },
       defense: {
         base: 1,
-        potential: 1
+        potential: 1,
       },
       movement: {
         base: 6,
-        potential: 7
-      }
+        potential: 7,
+      },
     },
-    roles: [Role.SNIPER, Role.DAMAGER, Role.DISABLER, Role.HEALER, Role.FARMING],
+    roles: [
+      Role.SNIPER,
+      Role.DAMAGER,
+      Role.DISABLER,
+      Role.HEALER,
+      Role.FARMING,
+    ],
     link: "https://boardgamegeek.com/thread/2891788/silverarrow-hero-spotlight-first-printing",
-    themeColor: "#288840"
+    themeColor: "#288840",
   },
   {
     name: HeroName.MIN,
@@ -357,24 +388,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 4,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       defense: {
         base: 3,
-        potential: 8
+        potential: 8,
       },
       movement: {
         base: 6,
-        potential: 6
-      }
+        potential: 6,
+      },
     },
     roles: [Role.TOKENS, Role.DISABLER, Role.DAMAGER, Role.MELEE],
     link: "https://boardgamegeek.com/thread/2886926/min-hero-spotlight-1st-printing-2022",
-    themeColor: "#fd4007"
+    themeColor: "#fd4007",
   },
   {
     name: HeroName.MRAK,
@@ -382,24 +413,30 @@ export const HEROES = [
     stats: {
       attack: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 1,
-        potential: 1
+        potential: 1,
       },
       defense: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       movement: {
         base: 2,
-        potential: 4
-      }
+        potential: 4,
+      },
     },
-    roles: [Role.MELEE, Role.TOKENS, Role.DURABLE, Role.DISABLER, Role.TACTICIAN],
+    roles: [
+      Role.MELEE,
+      Role.TOKENS,
+      Role.DURABLE,
+      Role.DISABLER,
+      Role.TACTICIAN,
+    ],
     link: "https://boardgamegeek.com/thread/3449043/mrak-hero-spotlight-2nd-printing",
-    themeColor: "#0fc23c"
+    themeColor: "#0fc23c",
   },
   {
     name: HeroName.CUTTER,
@@ -407,24 +444,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 4,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 6,
-        potential: 6
+        potential: 6,
       },
       defense: {
         base: 4,
-        potential: 4
+        potential: 4,
       },
       movement: {
         base: 4,
-        potential: 8
-      }
+        potential: 8,
+      },
     },
     roles: [Role.TACTICIAN, Role.DISABLER, Role.FARMING],
     link: "https://boardgamegeek.com/thread/2893527/cutter-hero-spotlight",
-    themeColor: "#8b3e6b"
+    themeColor: "#8b3e6b",
   },
   {
     name: HeroName.TRINKETS,
@@ -432,24 +469,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 3,
-        potential: 5
+        potential: 5,
       },
       initiative: {
         base: 6,
-        potential: 6
+        potential: 6,
       },
       defense: {
         base: 2,
-        potential: 4
+        potential: 4,
       },
       movement: {
         base: 7,
-        potential: 8
-      }
+        potential: 8,
+      },
     },
     roles: [Role.SNIPER, Role.DAMAGER, Role.PUSHER],
     link: "https://boardgamegeek.com/thread/2910990/trinkets-hero-spotlight",
-    themeColor: "#21a5bd"
+    themeColor: "#21a5bd",
   },
   {
     name: HeroName.TALI,
@@ -457,24 +494,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 4,
-        potential: 6
+        potential: 6,
       },
       initiative: {
         base: 5,
-        potential: 8
+        potential: 8,
       },
       defense: {
         base: 4,
-        potential: 4
+        potential: 4,
       },
       movement: {
         base: 5,
-        potential: 5
-      }
+        potential: 5,
+      },
     },
     roles: [Role.DAMAGER, Role.PUSHER, Role.HEALER, Role.DURABLE, Role.TOKENS],
     link: "https://boardgamegeek.com/thread/2893302/tali-hero-spotlight-1st-printing",
-    themeColor: "#c933c1"
+    themeColor: "#c933c1",
   },
   {
     name: HeroName.SWIFT,
@@ -482,24 +519,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 5,
-        potential: 5
+        potential: 5,
       },
       initiative: {
         base: 4,
-        potential: 4
+        potential: 4,
       },
       defense: {
         base: 2,
-        potential: 2
+        potential: 2,
       },
       movement: {
         base: 7,
-        potential: 7
-      }
+        potential: 7,
+      },
     },
     roles: [Role.SNIPER, Role.FARMING, Role.TACTICIAN],
     link: "https://boardgamegeek.com/thread/2889490/swift-character-spotlight",
-    themeColor: "#a7892a"
+    themeColor: "#a7892a",
   },
   {
     name: HeroName.WUK,
@@ -507,24 +544,31 @@ export const HEROES = [
     stats: {
       attack: {
         base: 5,
-        potential: 5
+        potential: 5,
       },
       initiative: {
         base: 1,
-        potential: 1
+        potential: 1,
       },
       defense: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       movement: {
         base: 3,
-        potential: 4
-      }
+        potential: 4,
+      },
     },
-    roles: [Role.TOKENS, Role.PUSHER, Role.DURABLE, Role.SNIPER, Role.TACTICIAN, Role.HEALER],
+    roles: [
+      Role.TOKENS,
+      Role.PUSHER,
+      Role.DURABLE,
+      Role.SNIPER,
+      Role.TACTICIAN,
+      Role.HEALER,
+    ],
     link: "https://boardgamegeek.com/thread/2894009/wuk-hero-spotlight",
-    themeColor: "#ff5d5d"
+    themeColor: "#ff5d5d",
   },
   {
     name: HeroName.HANU,
@@ -532,24 +576,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 4,
-        potential: 4
+        potential: 4,
       },
       initiative: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       defense: {
         base: 1,
-        potential: 1
+        potential: 1,
       },
       movement: {
         base: 7,
-        potential: 8
-      }
+        potential: 8,
+      },
     },
     roles: [Role.TACTICIAN, Role.SNIPER, Role.PUSHER],
     link: "https://boardgamegeek.com/thread/2894481/hanu-hero-spotlight",
-    themeColor: "#ff5555"
+    themeColor: "#ff5555",
   },
   {
     name: HeroName.BRYNN,
@@ -557,24 +601,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 4,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 7,
-        potential: 7
+        potential: 7,
       },
       defense: {
         base: 4,
-        potential: 4
+        potential: 4,
       },
       movement: {
         base: 5,
-        potential: 6
-      }
+        potential: 6,
+      },
     },
     roles: [Role.TACTICIAN, Role.DAMAGER, Role.DURABLE],
     link: "https://boardgamegeek.com/thread/3456595/brynn-hero-spotlight-2nd-printing",
-    themeColor: "#b17c4b"
+    themeColor: "#b17c4b",
   },
   {
     name: HeroName.MORTIMER,
@@ -582,24 +626,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 2,
-        potential: 2
+        potential: 2,
       },
       defense: {
         base: 7,
-        potential: 7
+        potential: 7,
       },
       movement: {
         base: 4,
-        potential: 4
-      }
+        potential: 4,
+      },
     },
     roles: [Role.MELEE, Role.TOKENS, Role.FARMING, Role.DURABLE, Role.PUSHER],
     link: "https://boardgamegeek.com/thread/3453397/mortimer-hero-spotlight-2nd-printing",
-    themeColor: "#51f05e"
+    themeColor: "#51f05e",
   },
   {
     name: HeroName.WIDGET,
@@ -607,24 +651,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 5,
-        potential: 5
+        potential: 5,
       },
       initiative: {
         base: 4,
-        potential: 4
+        potential: 4,
       },
       defense: {
         base: 4,
-        potential: 4
+        potential: 4,
       },
       movement: {
         base: 5,
-        potential: 6
-      }
+        potential: 6,
+      },
     },
     roles: [Role.TACTICIAN, Role.PUSHER, Role.DAMAGER],
     link: "https://boardgamegeek.com/thread/3454879/widget-and-pyro-spotlight",
-    themeColor: "#0b9bdd"
+    themeColor: "#0b9bdd",
   },
   {
     name: HeroName.SNORRI,
@@ -632,24 +676,31 @@ export const HEROES = [
     stats: {
       attack: {
         base: 5,
-        potential: 6
+        potential: 6,
       },
       initiative: {
         base: 2,
-        potential: 2
+        potential: 2,
       },
       defense: {
         base: 5,
-        potential: 6
+        potential: 6,
       },
       movement: {
         base: 4,
-        potential: 5
-      }
+        potential: 5,
+      },
     },
-    roles: [Role.SNIPER, Role.FARMING, Role.DURABLE, Role.DAMAGER, Role.PUSHER, Role.HEALER],
+    roles: [
+      Role.SNIPER,
+      Role.FARMING,
+      Role.DURABLE,
+      Role.DAMAGER,
+      Role.PUSHER,
+      Role.HEALER,
+    ],
     link: "https://www.youtube.com/watch?v=u2Jw0NirUGY",
-    themeColor: "#2a8b0d"
+    themeColor: "#2a8b0d",
   },
   {
     name: HeroName.RAZZLE,
@@ -657,24 +708,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 3,
-        potential: 3
+        potential: 3,
       },
       initiative: {
         base: 8,
-        potential: 8
+        potential: 8,
       },
       defense: {
         base: 1,
-        potential: 4
+        potential: 4,
       },
       movement: {
         base: 5,
-        potential: 6
-      }
+        potential: 6,
+      },
     },
     roles: [Role.TACTICIAN, Role.MELEE],
     link: "https://www.youtube.com/watch?v=VCxNLve_-O8",
-    themeColor: "#79a0e0"
+    themeColor: "#79a0e0",
   },
   {
     name: HeroName.GYDION,
@@ -682,24 +733,31 @@ export const HEROES = [
     stats: {
       attack: {
         base: 5,
-        potential: 6
+        potential: 6,
       },
       initiative: {
         base: 3,
-        potential: 3
+        potential: 3,
       },
       defense: {
         base: 3,
-        potential: 5
+        potential: 5,
       },
       movement: {
         base: 1,
-        potential: 4
-      }
+        potential: 4,
+      },
     },
-    roles: [Role.SNIPER, Role.TACTICIAN, Role.FARMING, Role.DAMAGER, Role.PUSHER, Role.TOKENS],
+    roles: [
+      Role.SNIPER,
+      Role.TACTICIAN,
+      Role.FARMING,
+      Role.DAMAGER,
+      Role.PUSHER,
+      Role.TOKENS,
+    ],
     link: "https://www.youtube.com/watch?v=ArQe1jBTAEg",
-    themeColor: "#aca9a9"
+    themeColor: "#aca9a9",
   },
   {
     name: HeroName.NEBKHER,
@@ -707,24 +765,24 @@ export const HEROES = [
     stats: {
       attack: {
         base: 2,
-        potential: 3
+        potential: 3,
       },
       initiative: {
         base: 1,
-        potential: 1
+        potential: 1,
       },
       defense: {
         base: 5,
-        potential: 6
+        potential: 6,
       },
       movement: {
         base: 2,
-        potential: 5
-      }
+        potential: 5,
+      },
     },
     roles: [Role.DISABLER, Role.TOKENS, Role.SNIPER],
     link: "https://boardgamegeek.com/thread/2896563/nebkher-hero-spotlight",
-    themeColor: "#ddd127"
+    themeColor: "#ddd127",
   },
   {
     name: HeroName.IGNATIA,
@@ -732,24 +790,30 @@ export const HEROES = [
     stats: {
       attack: {
         base: 5,
-        potential: 5
+        potential: 5,
       },
       initiative: {
         base: 2,
-        potential: 2
+        potential: 2,
       },
       defense: {
         base: 6,
-        potential: 6
+        potential: 6,
       },
       movement: {
         base: 4,
-        potential: 5
-      }
+        potential: 5,
+      },
     },
-    roles: [Role.SNIPER, Role.DAMAGER, Role.TOKENS, Role.TACTICIAN, Role.PUSHER],
+    roles: [
+      Role.SNIPER,
+      Role.DAMAGER,
+      Role.TOKENS,
+      Role.TACTICIAN,
+      Role.PUSHER,
+    ],
     link: "https://boardgamegeek.com/thread/2887471/ignatia-hero-spotlight-1st-printing",
-    themeColor: "#dd0b0b"
+    themeColor: "#dd0b0b",
   },
   {
     name: HeroName.TAKAHIDE,
@@ -757,24 +821,30 @@ export const HEROES = [
     stats: {
       attack: {
         base: 5,
-        potential: 7
+        potential: 7,
       },
       initiative: {
         base: 3,
-        potential: 5
+        potential: 5,
       },
       defense: {
         base: 4,
-        potential: 7
+        potential: 7,
       },
       movement: {
         base: 1,
-        potential: 4
-      }
+        potential: 4,
+      },
     },
-    roles: [Role.DURABLE, Role.SNIPER, Role.TACTICIAN, Role.DAMAGER, Role.FARMING],
+    roles: [
+      Role.DURABLE,
+      Role.SNIPER,
+      Role.TACTICIAN,
+      Role.DAMAGER,
+      Role.FARMING,
+    ],
     link: "https://boardgamegeek.com/thread/3451226/takahide-hero-spotlight-2nd-printing",
-    themeColor: "#b1320c"
+    themeColor: "#b1320c",
   },
   {
     name: HeroName.EMMITT,
@@ -782,23 +852,29 @@ export const HEROES = [
     stats: {
       attack: {
         base: 5,
-        potential: 8
+        potential: 8,
       },
       initiative: {
         base: 1,
-        potential: 1
+        potential: 1,
       },
       defense: {
         base: 6,
-        potential: 6
+        potential: 6,
       },
       movement: {
         base: 2,
-        potential: 4
-      }
+        potential: 4,
+      },
     },
-    roles: [Role.MELEE, Role.TACTICIAN, Role.DURABLE, Role.DISABLER, Role.TOKENS],
+    roles: [
+      Role.MELEE,
+      Role.TACTICIAN,
+      Role.DURABLE,
+      Role.DISABLER,
+      Role.TOKENS,
+    ],
     link: "https://boardgamegeek.com/thread/3459593/emmitt-hero-spotlight-2nd-printing",
-    themeColor: "#855234"
-  }
-] as Hero[]
+    themeColor: "#855234",
+  },
+] as Hero[];

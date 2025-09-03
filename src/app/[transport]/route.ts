@@ -45,7 +45,7 @@ const handler = createMcpHandler(
       "topPlayerAtAHero",
       "Find who the best player is with a specific hero",
       {
-        hero: z.enum(HeroName),
+        hero: z.enum(Object.values(HeroName)),
       },
       ({ hero }) => {
         let topRate = -1;

@@ -5,6 +5,7 @@ import Card from "@/components/Card";
 import { GAMES } from "@/data/games";
 import { PLAYERS } from "@/data/players";
 import { PlayerName } from "@/types/players";
+import { getPlayerWinrate } from "@/util/match-parser";
 import {
   AllCommunityModule,
   ModuleRegistry,
@@ -101,23 +102,6 @@ export default function PlayerBio() {
       </div>
     </>
   );
-}
-
-function getPlayerWinrate(playerName: PlayerName) {
-  let wins = 0;
-  let games = 0;
-
-  for (let i = 0; i < GAMES.length; i++) {
-    const player = GAMES[i].players.find(({ name }) => playerName === name);
-
-    if (!player) continue;
-
-    games++;
-
-    if (player.win) wins++;
-  }
-
-  return { wins, games };
 }
 
 function buildPlayerHeroGridData(player: PlayerName) {

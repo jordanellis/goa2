@@ -1,6 +1,5 @@
 "use client";
 
-import { getGameDataByHero } from "@/data/games";
 import { AgGridReact } from "ag-grid-react";
 import {
   AllCommunityModule,
@@ -9,6 +8,7 @@ import {
 } from "ag-grid-community";
 import { useRouter } from "next/navigation";
 import BubbleChart from "@/components/BubbleChart";
+import { getGameDataByHero } from "@/util/match-parser";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 

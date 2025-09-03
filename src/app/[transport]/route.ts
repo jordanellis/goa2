@@ -56,7 +56,7 @@ const handler = createMcpHandler(
           let games = 0;
           GAMES.forEach((game) => {
             const player = game.players.find(
-              (matchPlayer: any) =>
+              (matchPlayer) =>
                 matchPlayer.name === p.name && matchPlayer.heroName === hero
             );
 

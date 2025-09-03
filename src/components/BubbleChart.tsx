@@ -1,6 +1,6 @@
 "use client";
 
-import { getGameDataByHero } from "@/data/games";
+import { getGameDataByHero } from "@/util/match-parser";
 import { HEROES } from "@/data/heroes";
 import { Chart } from "chart.js/auto";
 import { useEffect } from "react";

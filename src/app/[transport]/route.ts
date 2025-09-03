@@ -110,6 +110,9 @@ const handler = createMcpHandler(
         bestOverallPlayer: {
           description: "Find who the best overall player is in GoA2",
         },
+        topPlayerAtAHero: {
+          description: "Find who the best player is with a specific hero",
+        },
       },
     },
   },

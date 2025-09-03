@@ -43,9 +43,9 @@ const handler = createMcpHandler(
     );
     server.tool(
       "topPlayerAtAHero",
-      "Find who the best player is with a specific hero",
+      "Find who the best player is with a specific hero in GoA2",
       {
-        hero: z.enum(Object.values(HeroName)),
+        hero: z.enum(Object.values(HeroName).map((h) => h.toLowerCase())),
       },
       ({ hero }) => {
         let topRate = -1;

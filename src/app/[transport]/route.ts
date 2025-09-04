@@ -1,12 +1,22 @@
 import { GAMES } from "@/data/games";
 import { PLAYERS } from "@/data/players";
 import { HeroName } from "@/types/hero";
-import { getPlayerWinrate } from "@/util/match-parser";
+import { getPlayerWinrate, getTopPlayerForHero } from "@/util/match-parser";
 import { createMcpHandler } from "@vercel/mcp-adapter";
 import z from "zod";
 
 const handler = createMcpHandler(
   (server) => {
+    server.tool(
+      "getAllGameData",
+      "Get the raw json game data for all matches. This could be used to figure out various different stats.",
+      {},
+      () => {
+        return {
+          content: [{ type: "text", text: JSON.stringify(GAMES) }],
+        };
+      }
+    );
     server.tool(
       "bestOverallPlayer",
       "Find who the best overall player is in GoA2",
@@ -45,44 +55,22 @@ const handler = createMcpHandler(
       "topPlayerAtAHero",
       "Find who the best player is with a specific hero in GoA2",
       {
-        hero: z.enum(Object.values(HeroName).map((h) => h.toLowerCase())),
+        heroName: z
+          .enum(Object.values(HeroName))
+          .describe(
+            "This is the name of the hero. Hero names include: " +
+              Object.values(HeroName).join(", ")
+          ),
       },
-      ({ hero }) => {
-        let topRate = -1;
-        let topPlayers: string[] = [];
-
-        PLAYERS.forEach((p) => {
-          let wins = 0;
-          let games = 0;
-          GAMES.forEach((game) => {
-            const player = game.players.find(
-              (matchPlayer) =>
-                matchPlayer.name === p.name && matchPlayer.heroName === hero
-            );
-
-            if (!player) return;
-
-            games++;
-            if (player.win) wins++;
-          });
-
-          if (games === 0) return;
-
-          const rate = wins / games;
-
-          if (rate === topRate) topPlayers.push(p.name);
-          if (rate > topRate) {
-            topPlayers = [p.name];
-            topRate = rate;
-          }
-        });
+      ({ heroName }) => {
+        const { topPlayers, topRate } = getTopPlayerForHero(heroName);
 
         if (topPlayers.length === 0) {
           return {
             content: [
               {
                 type: "text",
-                text: `No games found for hero ${hero}.`,
+                text: `No games found for hero ${heroName}.`,
               },
             ],
           };
@@ -97,7 +85,7 @@ const handler = createMcpHandler(
                 topPlayers.length > 1 ? "are" : "is"
               } currently the top player${
                 topPlayers.length > 1 ? "s" : ""
-              } with ${hero}`,
+              } with ${heroName}`,
             },
           ],
         };
@@ -112,6 +100,10 @@ const handler = createMcpHandler(
         },
         topPlayerAtAHero: {
           description: "Find who the best player is with a specific hero",
+        },
+        getAllGameData: {
+          description:
+            "Get the raw game data for all matches. This could be used to figure out various different stats.",
         },
       },
     },

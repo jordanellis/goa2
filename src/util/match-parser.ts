@@ -1,4 +1,5 @@
 import { GAMES } from "@/data/games";
+import { PLAYERS } from "@/data/players";
 import { HeroName } from "@/types/hero";
 import { PlayerName } from "@/types/players";
 
@@ -17,6 +18,39 @@ export function getPlayerWinrate(playerName: PlayerName) {
   }
 
   return { wins, games };
+}
+
+export function getTopPlayerForHero(hero: HeroName) {
+  let topRate = -1;
+  let topPlayers: string[] = [];
+
+  PLAYERS.forEach((p) => {
+    let wins = 0;
+    let games = 0;
+    GAMES.forEach((game) => {
+      const player = game.players.find(
+        (matchPlayer) =>
+          matchPlayer.name === p.name && matchPlayer.heroName === hero
+      );
+
+      if (!player) return;
+
+      games++;
+      if (player.win) wins++;
+    });
+
+    if (games === 0) return;
+
+    const rate = wins / games;
+
+    if (rate === topRate) topPlayers.push(p.name);
+    if (rate > topRate) {
+      topPlayers = [p.name];
+      topRate = rate;
+    }
+  });
+
+  return { topPlayers, topRate };
 }
 
 export function getGameDataByHero() {

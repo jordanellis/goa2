@@ -3,10 +3,12 @@ import Complexity from "@/components/Complexity";
 import RoleIcon from "@/components/RoleIcon";
 import { GAMES } from "@/data/games";
 import { HEROES } from "@/data/heroes";
+import { PLAYERS } from "@/data/players";
 import { HeroName } from "@/types/hero";
 import { getHeroImage } from "@/util/getHeroImage";
+import { getTopPlayerForHero } from "@/util/match-parser";
 import { pSBC } from "@/util/pSBC";
-import { RectangleHorizontal } from "lucide-react";
+import { Crown, RectangleHorizontal } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -28,6 +30,8 @@ export default async function HeroPage({
   const statBlock = "flex justify-between w-72 items-center";
 
   const { wins, games } = getHeroWinrate(name);
+
+  const { topPlayers, topRate } = getTopPlayerForHero(name);
 
   return (
     <>
@@ -93,6 +97,14 @@ export default async function HeroPage({
         <div>
           Win rate: {games ? `${(100 * (wins / games)).toFixed(2)}%` : "--"}
         </div>
+        {topPlayers.length > 0 && (
+          <div className="flex gap-2">
+            <Crown stroke="#e6e213" />
+            <div className="mt-0.5">{`${topPlayers.join(" ")} (${(
+              topRate * 100
+            ).toFixed(2)}%)`}</div>
+          </div>
+        )}
         <Link
           className="underline text-emerald-400 hover:text-emerald-500"
           href={link}

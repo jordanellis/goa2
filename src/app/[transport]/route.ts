@@ -5,6 +5,8 @@ import { getPlayerWinrate, getTopPlayerForHero } from "@/util/match-parser";
 import { createMcpHandler } from "@vercel/mcp-adapter";
 import z from "zod";
 
+const heroNames = Object.values(HeroName).map((h) => h.toString());
+
 const handler = createMcpHandler(
   (server) => {
     server.tool(
@@ -56,10 +58,10 @@ const handler = createMcpHandler(
       "Find who the best player is with a specific hero in GoA2",
       {
         heroName: z
-          .enum(Object.values(HeroName))
+          .enum(heroNames)
           .describe(
             "This is the name of the hero. Hero names include: " +
-              Object.values(HeroName).join(", ")
+              heroNames.join(", ")
           ),
       },
       ({ heroName }) => {

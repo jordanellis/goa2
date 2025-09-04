@@ -3,7 +3,6 @@ import Complexity from "@/components/Complexity";
 import RoleIcon from "@/components/RoleIcon";
 import { GAMES } from "@/data/games";
 import { HEROES } from "@/data/heroes";
-import { PLAYERS } from "@/data/players";
 import { HeroName } from "@/types/hero";
 import { getHeroImage } from "@/util/getHeroImage";
 import { getTopPlayerForHero } from "@/util/match-parser";

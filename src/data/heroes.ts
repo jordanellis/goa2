@@ -459,7 +459,7 @@ export const HEROES = [
         potential: 8,
       },
     },
-    roles: [Role.TACTICIAN, Role.DISABLER, Role.FARMING],
+    roles: [Role.TACTICIAN, Role.DAMAGER, Role.FARMING],
     link: "https://boardgamegeek.com/thread/2893527/cutter-hero-spotlight",
     themeColor: "#8b3e6b",
   },

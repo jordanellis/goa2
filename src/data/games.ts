@@ -172,4 +172,17 @@ export const GAMES = [
     waves: 5,
     type: "long",
   },
+  {
+    id: 13,
+    date: "12/15/25",
+    players: [
+      { name: PlayerName.NICK, heroName: HeroName.WHISPER, win: true },
+      { name: PlayerName.JORDAN, heroName: HeroName.TRINKETS, win: false },
+      { name: PlayerName.DUSTIN, heroName: HeroName.BAIN, win: true },
+      { name: PlayerName.CHRIS, heroName: HeroName.GARRUS, win: false },
+    ],
+    winType: WinType.LIFE,
+    waves: 4,
+    type: "long",
+  },
 ] as Game[];

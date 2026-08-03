@@ -15,7 +15,7 @@ export default async function MatchPage({
       <Button className="w-fit" to="/matches">
         {"< Matches"}
       </Button>
-      <div className="flex flex-col gap-4 m-auto pt-6 text-neutral-100 text-center">
+      <div className="flex flex-col gap-4 mx-auto mb-auto pt-6 text-primary-text text-center">
         <div className="">{match?.date}</div>
         <div className="flex flex-col gap-4">
           <div className="text-blue-300 font-bold">

@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   description: "GoA2 Your Happy Place",
 };
 
+// darker-blu [#12343b]
+// blu [#2d545e]
+// sand [#e1b382]
+// darker-sand [#c89666]
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={geist.className}>
       <body className="antialiased h-full">
-        <header className="w-full bg-linear-to-t from-emerald-950 to-emerald-800 p-2 text-center absolute top-0 text-rose-100 flex flex-col gap-2">
+        <header className="w-full bg-linear-to-t from-[#86582e] to-[#e1b382] p-2 text-center absolute top-0 text-[#12343b] flex flex-col gap-2">
           <Link href="/" className="font-bold text-2xl">
             GoA2 Your Happy Place
           </Link>
@@ -31,7 +36,7 @@ export default function RootLayout({
             <HeaderLink to={"/players"} title="players" />
           </div>
         </header>
-        <main className="sm:p-8 h-full flex flex-col justify-center sm:pt-28 p-4 pt-24">
+        <main className="sm:p-8 min-h-screen flex flex-col justify-center sm:pt-28 p-4 pt-24 bg-linear-to-t to-[#081b1f] from-[#12343b]">
           {children}
         </main>
       </body>

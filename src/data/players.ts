@@ -25,4 +25,9 @@ export const PLAYERS = [
     tidbit:
       'Nick loves the idea of game night. As the mythical "fifth player" of game night, when graced with his presence, it\'s like the true return of the king. We also hear legend of his kickstarter pledge. Rumor has it that every time Dustin redoes a turn, the delivery date gets pushed back - we may never get to play it.',
   },
+  {
+    name: PlayerName.MIKE,
+    birthplace: "TBD",
+    tidbit: "Mike.",
+  },
 ] as Player[];

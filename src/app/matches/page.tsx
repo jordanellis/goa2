@@ -10,7 +10,7 @@ export default function Matches() {
             <Link
               key={id}
               href={`/matches/${id}`}
-              className="flex [&:not(:last-child)]:border-b border-emerald-700 pt-0.5"
+              className="flex [&:not(:last-child)]:border-b border-secondary-accent pt-0.5"
             >
               <div className="hidden sm:block my-auto">{date}</div>
               <div className="sm:hidden block my-auto">
@@ -40,7 +40,7 @@ export default function Matches() {
                 </div>
               </div>
             </Link>
-          )
+          ),
         )}
       </div>
     </>

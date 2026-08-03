@@ -27,13 +27,13 @@ export default function Heroes() {
 
   function updateComplexityFilter(checked: boolean, value: number) {
     setComplexityFilter((prev) =>
-      checked ? [...prev, value] : prev.filter((val) => val !== value)
+      checked ? [...prev, value] : prev.filter((val) => val !== value),
     );
   }
 
   function updateRoleFilter(checked: boolean, value: Role) {
     setRoleFilter((prev) =>
-      checked ? [...prev, value] : prev.filter((val) => val !== value)
+      checked ? [...prev, value] : prev.filter((val) => val !== value),
     );
   }
 
@@ -86,11 +86,11 @@ export default function Heroes() {
       <div className="flex flex-col gap-4">
         <Disclosure
           as="div"
-          className="bg-emerald-900 rounded-2xl w-fit text-rose-50 mx-auto border border-emerald-800"
+          className="bg-primary rounded-2xl w-fit text-primary-text mx-auto border border-primary-accent"
           defaultOpen={false}
         >
           <DisclosureButton className="group flex w-full items-center gap-2 p-2 cursor-pointer">
-            <div className="text-sm/6 font-medium text-white group-data-hover:text-white/80">
+            <div className="text-sm/6 font-medium text-primary-text">
               Filters
             </div>
             <ChevronDown className="size-5 group-data-open:rotate-180" />
@@ -105,7 +105,7 @@ export default function Heroes() {
                     onChange={(checked) =>
                       updateComplexityFilter(checked, i + 1)
                     }
-                    className="bg-white/10 p-2 sm:p-4 focus:not-data-focus:outline-none data-checked:bg-emerald-700/80 first:rounded-l-full border border-emerald-600 last:rounded-r-full cursor-pointer"
+                    className="bg-white/10 p-2 sm:p-4 focus:not-data-focus:outline-none data-checked:bg-black/20 first:rounded-l-full border border-primary-lighter last:rounded-r-full cursor-pointer"
                   >
                     <Complexity className="hidden sm:flex" complexity={i + 1} />
                     <Complexity
@@ -124,7 +124,7 @@ export default function Heroes() {
                     onChange={(checked) =>
                       updateRoleFilter(checked, role as Role)
                     }
-                    className="bg-white/10 p-2 sm:p-4 focus:not-data-focus:outline-none data-checked:bg-emerald-700/80 first:sm:rounded-l-full border border-emerald-600 last:sm:rounded-r-full cursor-pointer"
+                    className="bg-white/10 p-2 sm:p-4 focus:not-data-focus:outline-none data-checked:bg-black/20 first:sm:rounded-l-full border border-primary-lighter last:sm:rounded-r-full cursor-pointer"
                   >
                     <div className="justify-center flex">{Icon}</div>
                     <div>{role}</div>
@@ -195,7 +195,7 @@ function StatSlider({
   onValueChange: (value: number[]) => void;
 }) {
   return (
-    <div className="flex gap-2 text-rose-50 max-w-200 items-center justify-between">
+    <div className="flex gap-2 text-primary-text max-w-200 items-center justify-between">
       <label>{label}:</label>
       <Root
         className="relative flex h-5 w-45 touch-none select-none items-center"
@@ -207,12 +207,12 @@ function StatSlider({
         step={1}
       >
         <Track className="relative h-[5px] grow rounded-full bg-black">
-          <Range className="absolute h-full rounded-full bg-emerald-300" />
+          <Range className="absolute h-full rounded-full bg-primary-lightest" />
         </Track>
-        <Thumb className="block size-5 rounded-[10px] bg-rose-100 shadow-[0_2px_10px] shadow-black hover:bg-rose-300 focus:shadow-[0_0_0_2px] focus:shadow-white focus:outline-none text-emerald-700 font-extrabold text-center">
+        <Thumb className="block size-5 rounded-[10px] bg-rose-100 shadow-[0_2px_10px] shadow-black hover:bg-secondary focus:shadow-[0_0_0_2px] focus:shadow-white focus:outline-none text-emerald-700 font-extrabold text-center">
           {value[0]}
         </Thumb>
-        <Thumb className="block size-5 rounded-[10px] bg-rose-100 shadow-[0_2px_10px] shadow-black hover:bg-rose-300 focus:shadow-[0_0_0_2px] focus:shadow-white focus:outline-none text-emerald-700 font-extrabold text-center">
+        <Thumb className="block size-5 rounded-[10px] bg-rose-100 shadow-[0_2px_10px] shadow-black hover:bg-secondary focus:shadow-[0_0_0_2px] focus:shadow-white focus:outline-none text-emerald-700 font-extrabold text-center">
           {value[1]}
         </Thumb>
       </Root>

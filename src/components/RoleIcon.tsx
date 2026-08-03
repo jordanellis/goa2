@@ -80,10 +80,10 @@ export default function RoleIcon({ role }: { role: Role }) {
           <div className="flex min-h-full items-center justify-center p-4">
             <DialogPanel
               transition
-              className="w-full max-w-md rounded-xl bg-emerald-300/20 p-6 backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
+              className="w-full max-w-md rounded-xl bg-black/25 p-6 backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
             >
               <Button
-                className="absolute right-2 top-2 items-center rounded-full !p-2 bg-emerald-950-700 px-3 py-1.5 text-rose-50 focus:not-data-focus:outline-none data-focus:outline data-focus:outline-white data-hover:bg-gray-600 data-open:bg-gray-700"
+                className="absolute right-2 top-2 items-center rounded-full !p-2 px-3 py-1.5 text-rose-50 focus:not-data-focus:outline-none data-focus:outline data-focus:outline-white data-hover:bg-gray-600 data-open:bg-gray-700"
                 onClick={close}
               >
                 <X />

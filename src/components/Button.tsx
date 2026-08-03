@@ -13,7 +13,7 @@ export default function Button({
   className,
   onClick,
 }: ButtonProps) {
-  const classes = `${className} py-2 px-3 border border-emerald-500 rounded-2xl bg-black`;
+  const classes = `${className} py-2 px-3 border text-[#2d545e] border-[#c89666] bg-[#e1b382] rounded-2xl font-bold`;
 
   return to ? (
     <Link className={classes} href={to}>

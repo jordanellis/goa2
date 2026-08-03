@@ -16,16 +16,16 @@ export default function Home() {
   const router = useRouter();
 
   const theme = themeQuartz.withParams({
-    backgroundColor: "rgb(20, 77, 54)",
-    foregroundColor: "rgb(255, 241, 242)",
-    headerTextColor: "rgb(255, 241, 242)",
-    headerBackgroundColor: "rgb(20, 97, 64)",
+    backgroundColor: "rgb(18, 52, 59)",
+    foregroundColor: "#ffeace",
+    headerTextColor: "#ffeace",
+    headerBackgroundColor: "rgb(18, 60, 70)",
     oddRowBackgroundColor: "rgb(0, 0, 0, 0.1)",
     headerColumnResizeHandleColor: "rgb(0, 0, 0)",
   });
 
   return (
-    <>
+    <div className="flex flex-col w-full h-full justify-center items-center gap-6">
       <div className="h-150 w-full">
         <AgGridReact
           theme={theme}
@@ -65,12 +65,11 @@ export default function Home() {
             type: "fitGridWidth",
           }}
         />
-        <div className="w-full m-auto sm:block hidden">
-          <BubbleChart />
-        </div>
-        <div className="h-20" />
       </div>
-    </>
+      <div className="w-full m-auto sm:flex hidden pt-4 border border-[#FFF1F226] rounded-lg bg-[#12343b]">
+        <BubbleChart />
+      </div>
+    </div>
   );
 }
 

@@ -105,7 +105,7 @@ export default async function HeroPage({
           </div>
         )}
         <Link
-          className="underline text-emerald-400 hover:text-emerald-500"
+          className="underline text-primary-text hover:text-secondary"
           href={link}
         >
           Guide
@@ -135,8 +135,8 @@ function StatRow({
             index < base
               ? pSBC(-0.35, heroColor) || "#3aab47"
               : index < potential
-              ? pSBC(0.25, heroColor) || "#a9f49d"
-              : "transparent"
+                ? pSBC(0.25, heroColor) || "#a9f49d"
+                : "transparent"
           }
           stroke={pSBC(-0.5, heroColor) || "#076913"}
           strokeWidth={1.5}

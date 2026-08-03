@@ -3,6 +3,7 @@ export enum PlayerName {
   NICK = "Nick",
   DUSTIN = "Dustin",
   CHRIS = "Chris",
+  MIKE = "Mike",
 }
 
 export type Player = {

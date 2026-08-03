@@ -16,7 +16,8 @@ export default function BubbleChart() {
       data: bubbleData,
       options: {
         responsive: true,
-        color: "#076913",
+        color: "#ffeace",
+        backgroundColor: "#00000000",
         scales: {
           x: {
             ticks: {
@@ -35,7 +36,7 @@ export default function BubbleChart() {
               stepSize: 1,
             },
             grid: {
-              color: "#07691355",
+              color: "#428f9e55",
             },
           },
         },
@@ -76,7 +77,10 @@ function getBubbleData() {
           r: (games.gamesPlayed / maxGamesPlayed) * 20,
         },
       ],
-      borderColor: "#076913",
-      backgroundColor: "#07691388",
+      borderColor:
+        HEROES.find(({ name }) => name === heroName)?.themeColor || "#000000",
+      backgroundColor:
+        HEROES.find(({ name }) => name === heroName)?.themeColor + "88" ||
+        "#000000",
     }));
 }

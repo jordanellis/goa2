@@ -27,10 +27,10 @@ export default function PlayerBio() {
   const { wins, games } = getPlayerWinrate(player.name);
 
   const theme = themeQuartz.withParams({
-    backgroundColor: "rgb(20, 77, 54)",
-    foregroundColor: "rgb(255, 241, 242)",
-    headerTextColor: "rgb(255, 241, 242)",
-    headerBackgroundColor: "rgb(20, 97, 64)",
+    backgroundColor: "rgb(18, 52, 59)",
+    foregroundColor: "#ffeace",
+    headerTextColor: "#ffeace",
+    headerBackgroundColor: "rgb(18, 60, 70)",
     oddRowBackgroundColor: "rgb(0, 0, 0, 0.1)",
     headerColumnResizeHandleColor: "rgb(0, 0, 0)",
   });
@@ -130,7 +130,7 @@ function buildPlayerHeroGridData(player: PlayerName) {
       hero: entry[0],
       games: entry[1].games,
       winPercentage: entry[1].wins / entry[1].games,
-    })
+    }),
   );
   return gridData;
 }
